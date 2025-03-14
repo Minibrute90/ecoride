@@ -7,11 +7,11 @@
 
 html{
     height: 100%;
-    background-color:#F0F7D2;
     font-family: "Inter", sans-serif;
 }
 
 body{
+    background-color:#F0F7D2;
     position: relative;
     min-height: 100%;
 }
@@ -69,7 +69,7 @@ nav a:hover{
     border-bottom: #51764B 1px solid;
 }
 
-/*style main*/
+/*style main_acceuil*/
 
 .container{
     display: flex;
@@ -139,16 +139,16 @@ footer{
     width:100%;
 }
 
-.bt_footer{
-    
-}
 
 .position_email{
+    margin-top: 40px;
     margin-left: 40px;
 }
 
 .position_mention{
-    margin-left: 100px;
+    position: absolute;
+    margin-top: 40px;
+    right: 40px;
 }
 
 .email, .mention{
@@ -171,4 +171,12 @@ a.email, a.mention{
 .email:hover, .mention:hover {
     background-color: #A0B063;
 }
+
+/*style mention légales*/
+
+body.ml{
+    background-color: white;
+}
+
+
 
