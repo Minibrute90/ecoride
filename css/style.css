@@ -1,0 +1,182 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html{
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color:#F0F7D2;
+    position: relative;
+    min-height: 100%;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+img{
+    border-radius: 20px;
+}
+
+
+/*style header*/
+
+header{
+    display: flex;
+}
+
+.logo{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    height: 70px;
+    width: 620px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+nav ul{
+    margin: auto;
+}
+
+
+nav li{
+    margin:20px;
+    display : inline-block
+}
+
+nav a{
+    color:#51764B;   
+}
+
+nav a.click{
+    font-weight: bold;  
+}
+
+nav a:hover{
+    border-bottom: #51764B 1px solid;
+}
+
+/*style main_acceuil*/
+
+.container{
+    display: flex;
+}
+
+.texte{
+    margin-top: 50px;
+    margin-left:260px;
+    width: 340px;
+}
+
+.columnright{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+.recherche p{
+    margin-top: 20px;
+    margin-left: 125px;
+}
+
+input.accueil{
+    border-radius: 10px;
+    border: none;
+    width: 463px;
+    height: 45px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+input::type{
+    padding-left: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+button.accueil{
+    background-color: #51764B;
+    color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    border:none;
+    width: 100px;
+    height: 45px;
+}
+
+button.accueil:hover{
+    background-color:#A0B063;
+}
+
+/*style footer*/
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 100px;
+    width:100%;
+}
+
+
+.position_email{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.position_mention{
+    position: absolute;
+    margin-top: 40px;
+    right: 40px;
+}
+
+.email, .mention{
+    padding: 10px;
+    background-color: #51764B;
+    border-radius: 10px;
+    width: 175px;
+    height: 30px;
+}
+
+
+a.email, a.mention{
+    text-align: center;
+    font-weight: lighter;
+    background-color:#7BA076;
+    color: white;
+}
+
+
+.email:hover, .mention:hover {
+    background-color: #A0B063;
+}
+
+/*style mention légales*/
+
+body.ml{
+    background-color: white;
+}
+
+
+
