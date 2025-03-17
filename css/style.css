@@ -16,20 +16,16 @@ body{
     min-height: 100%;
 }
 
-p{
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-img{
-    border-radius: 20px;
-}
 
 
 /*style header*/
 
 header{
     display: flex;
+    width:100%;
+    right:0;
+    left: 0;
+    top: 0;
 }
 
 .logo{
@@ -37,7 +33,7 @@ header{
     margin-top: 40px;
 }
 
-nav{
+.navbar{
     display: flex;
     background-color: white;
     height: 70px;
@@ -47,25 +43,25 @@ nav{
     margin-top: 50px;
 }
 
-nav ul{
+.navbar ul{
     margin: auto;
 }
 
 
-nav li{
+.navbar li{
     margin:20px;
     display : inline-block
 }
 
-nav a{
+.navbar a{
     color:#51764B;   
 }
 
-nav a.click{
-    font-weight: bold;  
+.navbar a.active{
+    font-weight: 900;  
 }
 
-nav a:hover{
+.navbar a:hover{
     border-bottom: #51764B 1px solid;
 }
 
@@ -75,20 +71,29 @@ nav a:hover{
     display: flex;
 }
 
+
 .texte{
-    margin-top: 50px;
-    margin-left:260px;
+    margin-left:350px;
     width: 340px;
 }
 
+.para{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
 .columnright{
-    margin-top: 50px;
     margin-left: 100px;
+}
+
+.illustration_accueil img{
+    border-radius: 20px;
 }
 
 
 .recherche p{
     margin-top: 20px;
+    margin-bottom:20px;
     margin-left: 125px;
 }
 
@@ -135,19 +140,19 @@ footer{
     left: 0;
     right: 0;
     background-color: white;
-    height: 100px;
+    height: 75px;
     width:100%;
 }
 
 
 .position_email{
-    margin-top: 40px;
+    margin-top :25px;
     margin-left: 40px;
 }
 
 .position_mention{
     position: absolute;
-    margin-top: 40px;
+    margin-top: 25px;
     right: 40px;
 }
 
@@ -177,6 +182,68 @@ a.email, a.mention{
 body.ml{
     background-color: white;
 }
+
+/*responsive*/
+
+.menu_hamburger{
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    header .logo{
+        display: block;
+        margin: 0px auto;
+    }
+
+    .navbar{
+        padding: 0px;
+    }
+    
+    .menu_hamburger{
+        display: block;
+    }
+
+    .navbar{
+        top:0px;
+        left:0px;
+        position: absolute;
+        background-color: rgba(rgba(255, 255, 255, 0.54), white, white, 0.5);
+        backdrop-filter: blur(8px);    
+        height: 100%;
+        width: 250px;
+        border-radius: 0px;
+        margin-left: -100%;
+        transition: all 0.2s ease;
+    }
+
+    .mobile_menu{
+        margin-top:0px;
+        margin-left:-20px;
+    }
+
+    .navbar ul{
+        position: absolute;
+        top:30px;
+        left:15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+    
 
 
 
