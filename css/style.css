@@ -3,6 +3,8 @@
 * {
     font-family: "Inter", sans-serif;
     font-size: large;
+    list-style: none;
+    text-decoration: none;
     margin:0;
     padding:0;
 }
@@ -26,32 +28,46 @@ header {
 }
 
 nav {
-    width: 75%;
+   position: absolute; 
+   left: 280px;
 }
 
 nav ul {
+    width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    list-style: none;
+}
+
+nav a {
+    color :#51764B;
+}
+
+nav a.active {
+    font-weight: 900;
 }
 
 /*style section_accueil*/
 
-#presentation {
-    height: 400px;
+.presentation {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#presentation article {
-    width: 45%;
-}
 
 article {
-    text-align: justify;
-    
+    width:50%;
+    display: flex;
+    justify-content:center;
+}
+
+.paragraphe {
+    margin-bottom: 20px;
 }
 
 /*style footer*/

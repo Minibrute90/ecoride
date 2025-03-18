@@ -1,10 +1,6 @@
 
 .menu_hamburger{
     display: none;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    width: 35px;
 }
 
 img{
@@ -25,7 +21,11 @@ img{
     }
     
     .menu_hamburger{
+        position:absolute;
+        right:10px;
+        top:10px;
         display: block;
+
     }
 
     .navbar{
@@ -37,8 +37,8 @@ img{
         height: 100%;
         width: 250px;
         border-radius: 0px;
-        margin-left: -100%;
-        transition: all 0.2s ease;
+        margin-left: -200%;
+        transition: all 0.5s ease;
     }
 
     .mobile_menu{
@@ -47,6 +47,7 @@ img{
     }
 
     .navbar ul{
+        background-color: transparent;
         position: absolute;
         top:30px;
         left:15px;
@@ -54,6 +55,9 @@ img{
         flex-direction: column;
     }
 
+    .navbar li{
+        margin-top:20px;
+    }
 
 
 }
