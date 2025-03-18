@@ -52,30 +52,71 @@ nav a.active {
 
 /*style section_accueil*/
 
-.presentation {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 
 article {
-    width:50%;
-    display: flex;
-    justify-content:center;
+    margin-right:40px;
+    margin-left:40px;
+    text-align: justify;
+    max-width: 500px;
 }
 
 .paragraphe {
     margin-bottom: 20px;
 }
 
+.illustration_accueil img{
+    border-radius: 20px;
+}
+
+.recherche{
+    margin-top:20px;
+    text-align: center;
+}
+
+.recherche form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+
+.recherche form input{
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.recherche form input::placeholder{
+    padding-left:10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.recherche form button{
+    background-color: #51764B;
+    color:white;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+}
+
+.recherche form button:hover{
+    background-color: #A8B47B;
+    color: black;
+}
+
 /*style footer*/
 
 footer {
-    
-    height: 50px;
-    
+    margin-top: 40px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #51764B;
 }
 
 
