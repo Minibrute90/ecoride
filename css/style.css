@@ -1,16 +1,28 @@
+/*style global*/
+
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: large;
+    margin:0;
+    padding:0;
 }
+
+.site{
+    background-color:#EFF7D2;
+}
+
+/*style header*/
 
 header {
     display: flex;
-    padding: 0% 5% 0% 5%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: aquamarine;
+}
 
+.logo{
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 nav {
@@ -24,6 +36,8 @@ nav ul {
     list-style: none;
 }
 
+/*style section_accueil*/
+
 #presentation {
     height: 400px;
     display: flex;
@@ -36,73 +50,16 @@ nav ul {
 }
 
 article {
-    border: 1px black solid;
-    padding: 0% 2% 0% 2%;
     text-align: justify;
-    margin: 2% 0% 2% 0%;
+    
 }
 
+/*style footer*/
+
 footer {
-    background-color: aquamarine;
+    
     height: 50px;
     
 }
 
-.menu_hamburger{
-    display: none;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    width: 35px;
-}
 
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-
-@media screen and (max-width: 1050px) {
-
-    header .logo{
-        display: block;
-        margin: 0px auto;
-    }
-
-    .navbar{
-        padding: 0px;
-    }
-    
-    .menu_hamburger{
-        display: block;
-    }
-
-    .navbar{
-        top:0px;
-        left:0px;
-        position: absolute;
-        background-color: rgba(rgba(255, 255, 255, 0.54), white, white, 0.5);
-        backdrop-filter: blur(8px);    
-        height: 100%;
-        width: 250px;
-        border-radius: 0px;
-        margin-left: -100%;
-        transition: all 0.2s ease;
-    }
-
-    .mobile_menu{
-        margin-top:0px;
-        margin-left:-20px;
-    }
-
-    .navbar ul{
-        position: absolute;
-        top:30px;
-        left:15px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-}
