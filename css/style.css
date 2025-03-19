@@ -56,7 +56,7 @@ nav a.active {
 
 /*style section_accueil*/
 section .presentation{
-    flex-grow: 1;
+    flex:1;
 }
 
 article {
@@ -116,12 +116,19 @@ article {
 /*style footer*/
 
 footer {
-    margin-top: 50px;
-    position:fixed;
-    bottom: 0;
+    margin-top: 40px;
     width: 100%;
-    height: 80px;
+    height: 50px;
     background-color: #51764B;
+}
+
+.position_email{
+    background-color: #A8B47B;
+    color: black;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    
 }
 
 
