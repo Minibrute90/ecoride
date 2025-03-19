@@ -50,8 +50,13 @@ nav a {
     color :#51764B;
 }
 
+nav a:hover{
+    border-bottom: 1px solid #51764B;
+}
+
 nav a.active {
     font-weight: 900;
+    border-bottom: none;
 }
 
 /*style section_accueil*/
@@ -118,17 +123,43 @@ article {
 footer {
     margin-top: 40px;
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: #51764B;
 }
 
-.position_email{
-    background-color: #A8B47B;
-    color: black;
-    height: 36px;
+.bt_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:32px;
+    margin-right:80px;
+    margin-left:80px;
+    left:0;
+    right:0;
+}
+
+
+.position_email, .position_mention{
+    background-color: #EFF7D2;
+    width: 160px;
+    height: 20px;
+    font-size: 12px;
     border: none;
-    border-radius: 10px;
-    
+    border-radius: 4px;
+}
+
+.position_email a, .position_mention a{
+    font-weight:300;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    color:#51764B;
+}
+
+.position_email a:hover, .position_mention a:hover{
+    background-color: #F4F9E2;
+    border-radius: 4px;
 }
 
 
