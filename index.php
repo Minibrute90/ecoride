@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_responsive.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,12 +50,14 @@
                 <img src="img/illust_463.jpg" alt="illustration">
             </div>
             <div class="recherche">
-                <p><b>Votre prochaine destination</b></p>
+                    <p class="titre_recherche"><b>Votre prochaine destination</b></p>
                <form action="#">
-                 <input class="accueil" type="text" placeholder="Votre destination" name="search">
-                 <button class="accueil" type="button">Rechercher</button></li>
+                    <div class="position_recherche">
+                        <input class="accueil" type="text" placeholder="Votre destination" name="search">
+                        <button class="accueil" type="button">Rechercher</button></li>
+                    </div>
                </form>
-             </div>
+            </div>
         </article>
     </section>
 

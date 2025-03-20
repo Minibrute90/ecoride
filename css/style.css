@@ -9,13 +9,13 @@
     padding:0;
 }
 
-
 body{
     background-color:#EFF7D2;
     display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 }
+
 
 /*style header*/
 
@@ -60,6 +60,14 @@ nav a.active {
 
 /*style section_accueil*/
 
+section {
+    flex:1;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 article {
     margin-right:40px;
     margin-left:40px;
@@ -72,19 +80,23 @@ article {
 }
 
 .illustration_accueil img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 20px;
 }
 
-.recherche{
-    margin-top:20px;
+.titre_recherche {
     text-align: center;
+    margin-top: 20px;
 }
 
-.recherche form{
-    margin-top: 20px;
+
+.position_recherche{
+    margin-top:20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;   
+    justify-content: space-between;
 }
 
 .recherche form input{
@@ -116,6 +128,24 @@ article {
 
 /*style footer*/
 
+footer {
+    margin-top: 40px;
+    width: 100%;
+    height: 80px;
+    background-color: #51764B;
+}
+
+
+.bt_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:32px;
+    margin-right:80px;
+    margin-left:80px;
+    left:0;
+    right:0;
+}
 
 
 .position_email, .position_mention{
@@ -139,6 +169,104 @@ article {
 .position_email a:hover, .position_mention a:hover{
     background-color: #F4F9E2;
     border-radius: 4px;
+}
+
+
+/*responsive*/
+
+.menu_hamburger{
+    display: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    header .logo{
+        display: block;
+        margin: 0px auto;
+    }
+
+    .navbar{
+        padding: 0px;
+    }
+    
+    .menu_hamburger{
+        position:absolute;
+        right:10px;
+        top:10px;
+        display: block;
+
+    }
+
+    .navbar{
+        top:0px;
+        left:0px;
+        position: absolute;
+        background-color: rgba(rgba(255, 255, 255, 0.54), white, white, 0.5);
+        backdrop-filter: blur(8px);    
+        height: 100%;
+        width: 250px;
+        border-radius: 0px;
+        margin-left: -200%;
+        transition: all 0.5s ease;
+    }
+
+    .mobile_menu{
+        margin-top:0px;
+        margin-left:-20px;
+    }
+
+    .navbar ul{
+        background-color: transparent;
+        position: absolute;
+        top:30px;
+        left:15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar li{
+        margin-top:20px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .presentation{
+        display: block;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .position_recherche{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .recherche form input{
+        width: 100%;
+    }
+
+    .recherche form button{
+        margin-top: 12px;
+        padding:12px;
+        font-size: 16px;
+    }
+
+    .bt_footer{
+        margin-left: 20px;
+        margin-right: 20px;;
+    }
+
+    
 }
 
 
