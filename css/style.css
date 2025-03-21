@@ -330,6 +330,25 @@ footer {
         margin-top:20px;
     }
 
+    article.zone_accescovoit{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    .zone_input_recherche_covoit input{
+        width: 100%;
+    }
+
+    .zone_input_recherche_covoit input{
+        margin-bottom: 12px;
+    }
+
+    .bouton_recherche_covoit{
+        margin-right: 20px;
+    }
+
+
 }
 
 
