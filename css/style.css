@@ -29,11 +29,22 @@ p {
 
 /*style header*/
 
-header {
+header{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.first_rows {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
     align-items: center;
+}
+
+.second_rows {
+    margin-top: 20px;
+    margin-right: 40px;
 }
 
 .logo{
@@ -41,12 +52,12 @@ header {
     margin-left: 40px;
 }
 
-nav {
+.navbar {
    margin-left: 80px;
 }
 
-nav ul {
-    width: 800px;
+.navbar ul {
+    width: 460px;
     padding: 20px;
     background-color: white;
     border-radius: 20px;
@@ -55,19 +66,29 @@ nav ul {
     justify-content: space-around;
 }
 
-nav a {
+.navbar a, nav.user a {
     color :#51764B;
     font-weight:200;
 }
 
-nav a:hover{
+.navbar a:hover, nav.user a:hover{
     border-bottom: 1px solid #51764B;
 }
 
-nav a.active {
+.navbar a.active {
     font-weight: 900;
     border-bottom: none;
 }
+
+nav.user ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav.user li{
+    margin-left: 20px;
+}
+
 
 /*style section_accueil*/
 
@@ -280,23 +301,40 @@ footer {
 }
 
 
-@media screen and (max-width: 1050px) {
 
-    header .logo{
-        display: block;
-        margin: 0px auto;
+
+@media screen and (max-width: 1300px) {
+
+    header{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
     }
+
+
 
     .navbar{
         padding: 0px;
     }
+
+    .first_rows{
+        margin-top: 40px;
+        display: flex;
+        flex-direction:row ;
+        justify-content:center;
+    }
+
+    nav.user{
+        display: flex;
+        flex-direction:row ;
+        justify-content:center;
+    }
     
     .menu_hamburger{
-        position:absolute;
-        right:10px;
-        top:10px;
         display: block;
-
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
     .navbar{
@@ -347,13 +385,7 @@ footer {
     .bouton_recherche_covoit{
         margin-right: 20px;
     }
-
-
-}
-
-
-@media screen and (max-width: 900px) {
-    
+ 
     section.presentation{
         display: block;
         flex-direction: column;

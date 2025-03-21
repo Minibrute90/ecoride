@@ -13,6 +13,7 @@
 
 <body class="site">
     <header>
+    <div class="first_rows">
         <div class="logo">
             <img src="img/logo_200px.png" alt="logo ecoride">
         </div>
@@ -20,11 +21,19 @@
             <ul>
                 <li><a class="active" href="index.php">Page d'accueil</a></li>
                 <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
-                <li><a href="#">Connexion</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+    </div>
+    <div class="second_rows">
+            <nav class ="user">
+                <ul>
+                    <li><a href="#">Inscrivez-vous</Inscrivez-vous></a></li>
+                    <li><a href="#">Connectez-vous</a></li>
+                <ul>
             <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
+            </nav>
+        
+    </div>
     </header>
 
     <section class="presentation">
