@@ -27,11 +27,34 @@
             <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
     </header>
 
-    <section class="presentation">
-        <article>
-            
+    <section class="zone_accescovoit">
+        <article class="zone_accescovoit">
 
+                <div class="zone_input_recherche_covoit">
+                    <h1>1. Départ</h1>
+                        <input class="recherche_covoit" type="text" placeholder="Entrez votre ville de départ" name="search">
+                </div>
+                
+                <div class="zone_input_recherche_covoit">
+                    <h1>2. Arrivée</h1>
+                        <input class="recherche_covoit" type="text" placeholder="Entrez votre ville d'arrivée" name="search">
+                </div>
+                
+                <div class="zone_input_recherche_covoit">
+                    <h1>3. Date de votre trajet</h1>
+                        <input class="recherche_covoit" type="text" placeholder="Entrez la date de votre trajet" name="search">
+                    </h1>
+                </div> 
 
+        </article>
+
+        <div class="bouton_recherche_covoit">
+                        <button class="btn_recherche_covoit" type="button">Rechercher</button>
+        </div>
+
+        <article class="zone_resultat_recherche">
+
+            <h2>Résultat de votre RECHERCHE</h2>
 
         </article>
     </section>

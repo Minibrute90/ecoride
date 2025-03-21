@@ -28,7 +28,7 @@
     </header>
 
     <section class="presentation">
-        <article>
+        <article class="presentation">
             <p class="paragraphe">
                 <b>EcoRide</b> est une <b>startup française</b> récemment créée avec une mission claire 
                 <b>réduire l'impact environnemental des déplacements en favorisant le covoiturage</b>. 
@@ -45,16 +45,16 @@
             </p>
         </article>
 
-        <article>
+        <article class="presentation">
             <div class="illustration_accueil">
                 <img src="img/illust_463.jpg" alt="illustration">
             </div>
             <div class="recherche">
-                    <p class="titre_recherche"><b>Votre prochaine destination</b></p>
+                    <h1 class="titre_recherche">Votre prochaine destination</h1>
                <form action="#">
                     <div class="position_recherche">
                         <input class="accueil" type="text" placeholder="Votre destination" name="search">
-                        <button class="accueil" type="button">Rechercher</button></li>
+                        <button class="accueil" type="button">Rechercher</button>
                     </div>
                </form>
             </div>
