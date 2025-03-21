@@ -28,33 +28,36 @@
     </header>
 
     <section class="zone_accescovoit">
+        <form action="#">
         <article class="zone_accescovoit">
-
+         
                 <div class="zone_input_recherche_covoit">
-                    <h1>1. Départ</h1>
+                    <div class="titre_input_recherche_covoit"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Départ</i> </h1></div>
                         <input class="recherche_covoit" type="text" placeholder="Entrez votre ville de départ" name="search">
                 </div>
                 
                 <div class="zone_input_recherche_covoit">
-                    <h1>2. Arrivée</h1>
+                    <div class="titre_input_recherche_covoit"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal">  <i>Arrivées</i> </h1></div>
                         <input class="recherche_covoit" type="text" placeholder="Entrez votre ville d'arrivée" name="search">
                 </div>
                 
                 <div class="zone_input_recherche_covoit">
-                    <h1>3. Date de votre trajet</h1>
+                    <div class="titre_input_recherche_covoit"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Date de votre trajet</i> </h1></div>
                         <input class="recherche_covoit" type="text" placeholder="Entrez la date de votre trajet" name="search">
                     </h1>
                 </div> 
 
         </article>
+        
 
         <div class="bouton_recherche_covoit">
                         <button class="btn_recherche_covoit" type="button">Rechercher</button>
         </div>
+        </form>
 
-        <article class="zone_resultat_recherche">
+        <article class="resultat_covoit">
 
-            <h2>Résultat de votre RECHERCHE</h2>
+        <div class="titre_resultat_covoit"><h2>Résultats de votre</h2><h2 class="h2_recherche-covoit">RECHERCHE</h2></div>
 
         </article>
     </section>

@@ -16,10 +16,14 @@ body{
 	min-height: 100vh;
 }
 
-input::placeholder {
-    padding-left:8px;
+input[type=text]{
+    padding-left:16px;
     font-weight: 300;
     font-style: italic;
+}
+
+p {
+    font-weight: 200;
 }
 
 
@@ -33,7 +37,7 @@ header {
 }
 
 .logo{
-    margin-top: 40px;
+    margin-top: 12px;
     margin-left: 40px;
 }
 
@@ -53,6 +57,7 @@ nav ul {
 
 nav a {
     color :#51764B;
+    font-weight:200;
 }
 
 nav a:hover{
@@ -85,10 +90,14 @@ article.presentation {
     margin-bottom: 20px;
 }
 
-.illustration_accueil img{
+.illustration_accueil {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 20px;
+}
+
+.illustration_accueil img{
     border-radius: 20px;
 }
 
@@ -101,25 +110,27 @@ article.presentation {
 .position_recherche{
     margin-top:20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .recherche form input{
     height: 36px;
     border: none;
     border-radius: 10px;
-    width: 75%;
+    
 }
 
 
 .recherche form button{
+    height: 36px;
+    margin-top: 12px;
     background-color: #51764B;
     color:white;
-    padding: 5px;
     font-size: 12px;
     border: none;
     border-radius: 10px;
+    width:100%;
 }
 
 .recherche form button:hover{
@@ -135,17 +146,23 @@ section.zone_accescovoit{
     flex-direction:column;
 }
 
-article.zone_accescovoit{
-    margin-top: 100px;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+.titre_input_recherche_covoit{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.bouton_recherche_covoit{
+.decal{
+    margin-left: 4px;
+}
+
+article.zone_accescovoit{
+    margin-top: 100px;
+    margin-right:40px;
+    margin-left:40px;
     display:flex;
     flex-direction:row;
-    justify-content:flex-end
+    justify-content:space-between;
 }
 
 .zone_input_recherche_covoit input{
@@ -157,6 +174,52 @@ article.zone_accescovoit{
     border-radius: 20px;
 }
 
+.bouton_recherche_covoit{
+    margin-top:32px;
+    margin-right:40px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+
+.bouton_recherche_covoit button{
+    width: 120px;
+    height: 40px;
+    background-color: #51764B;
+    color:white;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+}
+
+.bouton_recherche_covoit button:hover{
+    background-color: #A8B47B;
+    color: black;
+}
+
+article.resultat_covoit{
+    margin-top:80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.titre_resultat_covoit{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #51764B;
+}
+
+.h2_recherche-covoit{
+    margin-left: 4px;
+    font-weight: 300;
+    font-style: italic;
+}
 
 
 /*style footer*/
@@ -173,9 +236,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:32px;
-    margin-right:80px;
-    margin-left:80px;
+    margin-top:32px;
+    margin-right:40px;
+    margin-left:40px;
     left:0;
     right:0;
 }
@@ -211,7 +274,7 @@ footer {
     display: none;
 }
 
-img{
+.illustration_accueil img{
     max-width: 100%;
     height: auto;
 }
@@ -278,22 +341,7 @@ img{
         margin: 0px auto;
     }
 
-    .position_recherche{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .recherche form input{
-        width: 100%;
-    }
-
-    .recherche form button{
-        margin-top: 12px;
-        padding:12px;
-        font-size: 16px;
-    }
-
+    
     .bt_footer{
         margin-left: 20px;
         margin-right: 20px;;
