@@ -18,8 +18,8 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a class="active" href="#">Page d'accueil</a></li>
-                <li><a href="#">Accès au covoiturages</a></li>
+                <li><a class="active" href="index.php">Page d'accueil</a></li>
+                <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
                 <li><a href="#">Connexion</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
