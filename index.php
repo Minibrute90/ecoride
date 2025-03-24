@@ -27,8 +27,8 @@
     <div class="second_rows">
             <nav class ="user">
                 <ul>
-                    <li><a href="#">Inscrivez-vous</Inscrivez-vous></a></li>
-                    <li><a href="#">Connectez-vous</a></li>
+                    <li><a href="inscription.php">Inscrivez-vous</Inscrivez-vous></a></li>
+                    <li><a href="connection.php">Connectez-vous</a></li>
                 <ul>
             <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>

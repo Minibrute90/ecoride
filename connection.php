@@ -35,40 +35,28 @@
     </div>
     </header>
 
-    <section class="zone_accescovoit">
+    <section class="zone_user">
         <form action="#">
-            
-        <article class="zone_accescovoit">
-         
+        <article class="zone_user">
+
+                <h1 class="user_info">. Connection </h1>
+
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Départ</i> </h1></div>
-                        <input class="recherche_covoit" type="text" placeholder="Entrez votre ville de départ" name="search" required="required">
+                    <div class="titre_input"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Pseudo</i> </h1></div>
+                        <input class="user" type="text" placeholder="Entrez un pseudo" name="search" required="required">
                 </div>
                 
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal">  <i>Arrivées</i> </h1></div>
-                        <input class="recherche_covoit" type="text" placeholder="Entrez votre ville d'arrivée" name="search" required="required">
-                </div>
-                
-                <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Date de votre trajet</i> </h1></div>
-                        <input class="recherche_covoit" type="text" placeholder="Entrez la date de votre trajet" name="search" required="required">
+                    <div class="titre_input"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal"> <i>Mot de passe</i> </h1></div>
+                        <input class="user" type="text" placeholder="Entrez votre mot de passe" name="search" required="required">
                     </h1>
-                </div> 
-
-        </article>
-    
-                <div class="bouton_recherche_covoit">
-                        <button type="button">Rechercher</button>
                 </div>
 
+                <div class="bouton_user">
+                        <button type="button">Connection</button>
+                </div>
+                
         </form>
-
-        <article class="resultat_covoit">
-
-        <div class="titre_resultat_covoit"><h2>Résultats de votre</h2><h2 class="h2_recherche-covoit">RECHERCHE</h2></div>
-
-        </article>
     </section>
 
     <footer>
