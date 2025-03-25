@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,6 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>EcoRide</title>
 </head>
+
+<?php
+    try
+        {
+            $bdd = new PDO('mysql:host=localhost; dbname=ecoride;charset=utf8', 'root', '');
+            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        }
+            catch (Exception $e)
+        {
+            die('Erreur : ' . $e->getMessage());
+        }
+?>
 
 <body class="site">
     <header>
@@ -38,16 +52,53 @@
     <section class="zone_user">
 
         <article class="zone_user">
+    
+<?php
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=ecoride;charset=utf8', 'root', '');
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+    catch (Exception $e)
+{
+die('Erreur : ' . $e->getMessage());
+}
 
-                <h1 class="user_info">. Inscription reussie </h1>
 
-                    <div class="anim_pouce">
-                        <img src="img/pouce_400px.png" alt="inamation du pouve ok incription reussite" width="150px">
-                    </div>
+$verifUtilisateur = $bdd->query("SELECT `pseudo`, `email`, `motdepasse` FROM `connexion`
+                        WHERE `pseudo` LIKE '%" . $_POST['pseudo']. "%'AND `email` LIKE '%" . $_POST['email']. "%' AND `motdepasse` LIKE '%" . $_POST['motdepasse']. "%'");
+$resultatVerif = $verifUtilisateur->fetch();
 
-                <div class="bouton_user">
-                        <button type="button">Mon espace</button>
-                </div>
+if($resultatVerif == 0){
+
+$pdoStat = $bdd->prepare('INSERT INTO `connexion` VALUES (NULL, :pseudo, :email, :motdepasse)');
+
+$pdoStat->bindValue(':pseudo', $_POST['pseudo'], PDO::PARAM_STR);
+$pdoStat->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
+$pdoStat->bindValue(':motdepasse', $_POST['motdepasse'], PDO::PARAM_STR);
+
+$insertIsOk = $pdoStat->execute();	
+$message = '. Inscription reussie';	
+}
+
+else{
+
+$message = '. Ce pseudo est déja utilisé';
+}
+
+?>
+        
+        <h1 class="user_info">. Inscription reussie </h1>
+
+        <div class="anim_pouce">
+            <img src="img/pouce_400px.png" alt="animation du pouve ok incription reussite">
+        </div>
+
+        <div class="bouton_user">
+            <input type="submit" value="Mon espace" onclick="#">
+        </div>
+
+        </article>
     
     </section>
 

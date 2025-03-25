@@ -63,7 +63,7 @@
                <form action="#">
                     <div class="position_recherche">
                         <input class="accueil" type="text" placeholder="Votre destination" name="search">
-                        <button class="accueil" type="button">Rechercher</button>
+                        <input  type="submit" value="rechercher" onclick="#">
                     </div>
                </form>
             </div>

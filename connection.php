@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="bouton_user">
-                        <button type="button">Connection</button>
+                    <input type="submit" value="connection" onclick="#">
                 </div>
                 
         </form>

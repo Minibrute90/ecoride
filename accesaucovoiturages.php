@@ -52,14 +52,14 @@
                 
                 <div class="zone_input">
                     <div class="titre_input"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Date de votre trajet</i> </h1></div>
-                        <input class="recherche_covoit" type="text" placeholder="Entrez la date de votre trajet" name="search" required="required">
+                        <input class="recherche_covoit" type="date" placeholder="Entrez la date de votre trajet" name="search" required="required">
                     </h1>
                 </div> 
 
         </article>
     
                 <div class="bouton_recherche_covoit">
-                        <button type="button">Rechercher</button>
+                    <input type="submit" value="rechercher" onclick="#">
                 </div>
 
         </form>

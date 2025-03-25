@@ -36,24 +36,24 @@
     </header>
 
     <section class="zone_user">
-        <form action="#">
+        <form method="post" action="ok_inscription.php">
         <article class="zone_user">
 
                 <h1 class="user_info">. Inscription au site </h1>
 
                 <div class="zone_input">
                     <div class="titre_input"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Pseudo</i> </h1></div>
-                        <input class="user" type="text" placeholder="Entrez un pseudo" name="search" required="required">
+                        <input class="user" type="text" placeholder="Entrez un pseudo" name="pseudo" id="pseudo" required="required">
                 </div>
                 
                 <div class="zone_input">
                     <div class="titre_input"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal">  <i>Email</i> </h1></div>
-                        <input class="user" type="text" placeholder="Entrez votre addresse mail" name="search" required="required">
+                        <input class="user" type="text" placeholder="Entrez votre addresse mail" name="email" id="email" required="required">
                 </div>
                 
                 <div class="zone_input">
                     <div class="titre_input"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Mot de passe</i> </h1></div>
-                        <input class="user" type="text" placeholder="Entrez votre mot de passe" name="search" required="required">
+                        <input class="user" type="text" placeholder="Entrez votre mot de passe" name="motdepasse" id="motdepasse" required="required">
                     </h1>
                 </div>
 
@@ -65,7 +65,7 @@
                 </div>
                 
                 <div class="bouton_user">
-                        <button type="button">S'inscrire</button>
+                    <input type="submit" value="valider" onclick="#">
                 </div>
                 
         </form>

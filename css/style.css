@@ -23,6 +23,13 @@ input[type=text]{
     font-style: italic;
 }
 
+input[type=date]{
+    padding-left:16px;
+    padding-right: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+
 p {
     font-weight: 200;
 }
@@ -144,7 +151,7 @@ article.presentation {
 }
 
 
-.recherche form button{
+.recherche form [type=submit]{
     height: 36px;
     margin-top: 12px;
     background-color: #51764B;
@@ -155,7 +162,7 @@ article.presentation {
     width:100%;
 }
 
-.recherche form button:hover{
+.recherche form [type=submit]:hover{
     background-color: #A8B47B;
     color: black;
 }
@@ -205,7 +212,7 @@ article.zone_accescovoit{
     justify-content:flex-end;
 }
 
-.bouton_recherche_covoit button{
+.bouton_recherche_covoit [type=submit]{
     width: 120px;
     height: 40px;
     background-color: #51764B;
@@ -215,7 +222,7 @@ article.zone_accescovoit{
     border-radius: 10px;
 }
 
-.bouton_recherche_covoit button:hover{
+.bouton_recherche_covoit [type=submit]:hover{
     background-color: #A8B47B;
     color: black;
 }
@@ -254,7 +261,7 @@ section.zone_user{
     align-content: center;
 }
 
-h1.user_info{
+h1.user_info, .message_inscprition echo{
     color: #51764B;
     margin-bottom: 40px;
     font-size: 36px;
@@ -284,7 +291,7 @@ input.user{
     justify-content:flex-end;
 }
 
-.bouton_user button{
+.bouton_user [type="submit"]{
     width: 120px;
     height: 40px;
     background-color: #51764B;
@@ -292,6 +299,11 @@ input.user{
     font-weight: 300;
     border: none;
     border-radius: 10px;
+}
+
+.bouton_user [type="submit"]:hover{
+    background-color: #A8B47B;
+    color: black;
 }
 
 .anim_pouce{
