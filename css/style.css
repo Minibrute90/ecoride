@@ -17,7 +17,7 @@ body{
 	min-height: 100vh;
 }
 
-input[type=text]{
+input[type=text], input[type=password]{
     padding-left:16px;
     font-weight: 300;
     font-style: italic;
@@ -195,7 +195,7 @@ article.zone_accescovoit{
 }
 
 
-.zone_input input{
+.zone_input input {
     margin-top: 8px;
     width: 400px;
     height: 32px;
@@ -203,6 +203,8 @@ article.zone_accescovoit{
     border: 1px solid #51764B;
     border-radius: 20px;
 }
+
+
 
 .bouton_recherche_covoit{
     margin-top:32px;

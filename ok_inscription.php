@@ -65,17 +65,23 @@ die('Erreur : ' . $e->getMessage());
 }
 
 
-$verifUtilisateur = $bdd->query("SELECT `pseudo`, `email`, `motdepasse` FROM `connexion`
+$verifUtilisateur = $bdd->query("SELECT `pseudo`, `email`, `motdepasse` FROM `utilisateur`
                         WHERE `pseudo` LIKE '%" . $_POST['pseudo']. "%'AND `email` LIKE '%" . $_POST['email']. "%' AND `motdepasse` LIKE '%" . $_POST['motdepasse']. "%'");
 $resultatVerif = $verifUtilisateur->fetch();
 
 if($resultatVerif == 0){
 
-$pdoStat = $bdd->prepare('INSERT INTO `connexion` VALUES (NULL, :pseudo, :email, :motdepasse)');
+$pdoStat = $bdd->prepare('INSERT INTO `utilisateur` VALUES (NULL,:nom, :prenom, :email, :motdepasse, :telephone, :adresse, :date_naissance, :photo, :pseudo )');
 
-$pdoStat->bindValue(':pseudo', $_POST['pseudo'], PDO::PARAM_STR);
+$pdoStat->bindValue(':nom', $_POST['nom']=NULL, PDO::PARAM_STR);
+$pdoStat->bindValue(':prenom', $_POST['prenom']=NULL, PDO::PARAM_STR);
 $pdoStat->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
 $pdoStat->bindValue(':motdepasse', $_POST['motdepasse'], PDO::PARAM_STR);
+$pdoStat->bindValue(':telephone', $_POST['telephone']=NULL, PDO::PARAM_STR);
+$pdoStat->bindValue(':adresse', $_POST['adresse']=NULL, PDO::PARAM_STR);
+$pdoStat->bindValue(':date_naissance', $_POST['date_naissance']=NULL, PDO::PARAM_STR);
+$pdoStat->bindValue(':photo', $_POST['photo']=NULL, PDO::PARAM_STR);
+$pdoStat->bindValue(':pseudo', $_POST['pseudo'], PDO::PARAM_STR);
 
 $insertIsOk = $pdoStat->execute();	
 $message = '. Inscription reussie';	

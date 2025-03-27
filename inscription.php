@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +37,7 @@
     </header>
 
     <section class="zone_user">
-        <form method="post" action="ok_inscription.php">
+        <form onsubmit="verifierMotDePasse(event)">
         <article class="zone_user">
 
                 <h1 class="user_info">. Inscription au site </h1>
@@ -53,8 +54,9 @@
                 
                 <div class="zone_input">
                     <div class="titre_input"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Mot de passe</i> </h1></div>
-                        <input class="user" type="text" placeholder="Entrez votre mot de passe" name="motdepasse" id="motdepasse" required="required">
+                        <input class="user" type="password" placeholder="Entrez votre mot de passe" name="motdepasse" id="motdepasse" required >
                     </h1>
+                    
                 </div>
 
                 <div class="condition">
@@ -63,7 +65,7 @@
                     <p>1 majuscule minimum</p>
                     <p>10 caractères spécial minimum (!?_-@&)</p></br>
                 </div>
-                
+
                 <div class="bouton_user">
                     <input type="submit" value="valider" onclick="#">
                 </div>
@@ -92,5 +94,43 @@
       navLinks.classList.toggle('mobile_menu')
     })
 </script>
+
+<script>
+        function verifierMotDePasse(event) {
+            let motDePasse = document.getElementById('motdepasse').value;
+            let message = '';
+
+            // Condition 1 : Le mot de passe doit avoir au moins 8 caractères
+            if (motDePasse.length < 8) {
+                message += 'Le mot de passe doit comporter au moins 8 caractères. <br>';
+            }
+
+            // Condition 2 : Le mot de passe doit contenir au moins un chiffre
+            if (!/[0-9]/.test(motDePasse)) {
+                message += 'Le mot de passe doit contenir au moins un chiffre. <br>';
+            }
+
+            // Condition 3 : Le mot de passe doit contenir au moins une lettre majuscule
+            if (!/[A-Z]/.test(motDePasse)) {
+                message += 'Le mot de passe doit contenir au moins une lettre majuscule. <br>';
+            }
+
+            // Condition 4 : Le mot de passe doit contenir au moins 10 caractères spéciaux parmi (!?_-@&)
+            var specialChars = motDePasse.match(/[!?_-@&]/g);
+            if (!specialChars || specialChars.length < 10) {
+                message += 'Le mot de passe doit contenir au moins 10 caractères spéciaux parmi (!?_-@&). <br>';
+            }
+
+            // Affichage des erreurs ou confirmation
+            if (message !== '') {
+                document.getElementById('erreur').innerHTML = message;
+                return false; // Le mot de passe ne respecte pas les conditions
+            } else {
+                document.getElementById('erreur').innerHTML = 'Mot de passe valide.';
+                return true; // Le mot de passe respecte toutes les conditions
+            }
+        }
+    </script>
+
 
 </html>
