@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -36,27 +37,7 @@
     </header>
 
     <section class="zone_user">
-        <form method="post" action="espace_utilisateur.php">
-        <article class="zone_user">
-
-                <h1 class="user_info">. Connection </h1>
-
-                <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Pseudo</i> </h1></div>
-                        <input class="user" type="text" placeholder="Entrez un pseudo" name="search" required="required">
-                </div>
-                
-                <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal"> <i>Mot de passe</i> </h1></div>
-                        <input class="user" type="password" placeholder="Entrez votre mot de passe" name="search" required="required">
-                    </h1>
-                </div>
-
-                <div class="bouton_user">
-                    <input type="submit" value="connection" onclick="#">
-                </div>
-                
-        </form>
+       
     </section>
 
     <footer>
@@ -80,5 +61,9 @@
       navLinks.classList.toggle('mobile_menu')
     })
 </script>
+
+<script>
+</script>
+
 
 </html>
