@@ -101,7 +101,9 @@ $message = '. Ce pseudo est déja utilisé';
         </div>
 
         <div class="bouton_user">
-                <a href="connection.php">Connectez-vous</a>
+
+            <ul><li><a href="connection.php">Connectez-vous</a></li></ul>
+
         </div>
 
         </article>

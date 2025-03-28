@@ -308,6 +308,36 @@ input.user{
     color: black;
 }
 
+.bouton_user ul{
+    margin-top:80px;
+}
+
+.bouton_user li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 40px;
+    background-color: #51764B;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.bouton_user li:hover{
+    background-color: #A8B47B;
+    width: 160px;
+    height: 40px;
+}
+
+.bouton_user a{
+    color:white;
+}
+
+.bouton_user a:hover{
+    color:black;
+}
+
 .anim_pouce{
     display: flex;
     flex-wrap: wrap;
