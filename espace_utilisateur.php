@@ -48,12 +48,12 @@ if (!isset($_POST['pseudo'], $_POST['motdepasse']) || empty(trim($_POST['pseudo'
 
 try {
     // Connexion à la base de données (remplacez par vos paramètres)
-    $bdd = new PDO('mysql:host=localhost;ecoride;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=ecoride;charset=utf8', 'root', '');
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Requête préparée pour récupérer l'utilisateur avec le pseudo
     $stmt = $bdd->prepare("SELECT * FROM utilisateur WHERE pseudo LIKE :pseudo LIMIT 1");
-    $pseudo = "%" . trim($_POST['pseudo']) . "%";
+    $pseudo = trim($_POST['pseudo']);
     $stmt->bindParam(':pseudo', $pseudo, PDO::PARAM_STR);
     $stmt->execute();
 
@@ -62,9 +62,9 @@ try {
 
     if ($infoop) {
         // Vérification du mot de passe avec password_verify()
-        if (password_verify($_POST['motdepasse'], $infoop->motdepasse)) {
+        if ($_POST['motdepasse'] === $infoop->motdepasse)  {
             // Affichage des informations de l'utilisateur
-            echo "<h1>" . ($infoop->pseudo) . "</h1>\n";
+            echo "<h1 class='pseudo'>" . '. Espace de ' . ($infoop->pseudo) . "</h1>\n";
             echo "<table class=''>\n";
             echo "    <tr><td class=''>NOM</td><td class=''>" . ($infoop->nom) . "</td></tr>\n";
             echo "    <tr><td class=''>Prénom</td><td class=''>" . ($infoop->prenom) . "</td></tr>\n";
@@ -75,9 +75,11 @@ try {
             echo "</table>\n";
         } else {
             echo "<p class='erreur'>Mot de passe incorrect.</p>";
+            echo "<ul class='retour'><li><a href='connection.php'>Reessayer</a></li></ul>";
         }
-    } else {
-        echo "<p class='erreur'>Aucun utilisateur trouvé avec ce pseudo.</p>";
+        } else {
+            echo "<p class='erreur'>Aucun utilisateur trouvé avec ce pseudo.</p>";
+            echo "<ul class='retour'><li><a href='connection.php'>Reessayer</a></li></ul>";
     }
 } catch (PDOException $e) {
     echo "<p class='erreur'>Erreur : " . $e->getMessage() . "</p>";

@@ -55,6 +55,11 @@
                 <div class="zone_input">
                     <div class="titre_input"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Mot de passe</i> </h1></div>
                         <input class="user" type="password" placeholder="Entrez votre mot de passe" name="motdepasse" id="motdepasse" required >
+                    
+                    <div class="password-icon">
+                        <i data-feather="eye"></i>
+                        <i data-feather="eye-off"></i>
+                    </div>
                     </h1>
                     
                 </div>
@@ -95,7 +100,30 @@
     })
 </script>
 
+<script src="https://unpkg.com/feather-icons"></script>
+
 <script>
+  feather.replace();
+</script>
+
+<script>
+
+    const eye = document.querySelector(".feather-eye");
+    const eyeoff = document.querySelector(".feather-eye-off");
+    const passwordField = document.querySelector("input[type=password]");
+
+    eye.addEventListener("click", () => {
+    eye.style.display = "none";
+    eyeoff.style.display = "block";
+    passwordField.type = "text";
+});
+
+    eyeoff.addEventListener("click", () => {
+    eyeoff.style.display = "none";
+    eye.style.display = "block";
+    passwordField.type = "password";
+});
+
 </script>
 
 

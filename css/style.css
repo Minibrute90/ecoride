@@ -204,7 +204,29 @@ article.zone_accescovoit{
     border-radius: 20px;
 }
 
+.zone_input input:focus{
+    border: #ff4754;
+   
+}
 
+
+
+.zone_input .password-icon {
+    display: flex;
+    flex-direction: column;
+    align-items:last baseline;
+    margin-top: -40px;
+    margin-right: 12px;
+  }
+
+.zone_input  .password-icon:hover {
+    cursor: pointer;
+    color: #ff4754;
+  }
+  
+.zone_input .password-icon .feather-eye-off {
+    display: none;
+  }
 
 .bouton_recherche_covoit{
     margin-top:32px;
@@ -263,7 +285,7 @@ section.zone_user{
     align-content: center;
 }
 
-h1.user_info, .message_inscprition echo{
+h1.user_info, .message_inscprition, .pseudo{
     color: #51764B;
     margin-bottom: 40px;
     font-size: 36px;
@@ -277,7 +299,7 @@ input.user{
 }
 
 .condition{
-    margin-top: 12px;
+    margin-top: 24px;
     border-bottom: 1px solid #51764B;
 }
 
@@ -293,7 +315,11 @@ input.user{
     justify-content:flex-end;
 }
 
-.bouton_user [type="submit"]{
+.bouton_user [type="submit"], .retour li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 120px;
     height: 40px;
     background-color: #51764B;
@@ -303,7 +329,7 @@ input.user{
     border-radius: 10px;
 }
 
-.bouton_user [type="submit"]:hover{
+.bouton_user [type="submit"]:hover, .retour li:hover{
     background-color: #A8B47B;
     color: black;
 }
@@ -330,12 +356,25 @@ input.user{
     height: 40px;
 }
 
-.bouton_user a{
+.bouton_user a, .retour a{
     color:white;
 }
 
 .bouton_user a:hover{
     color:black;
+}
+
+p.erreur{
+    color:#ff4754;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+ul.retour{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .anim_pouce{
@@ -520,9 +559,18 @@ footer {
         margin-top: 40px;
     }
 
-    
+    input[type=text], input[type=password]{
+        font-size: 12px;
+        padding-left:16px;
+        font-weight: 300;
+        font-style: italic;
+    }
 
-    
+    .zone_input .password-icon {
+        margin-right: 0px;
+      }
+
+
     .bt_footer{
         margin-left: 20px;
         margin-right: 20px;;
