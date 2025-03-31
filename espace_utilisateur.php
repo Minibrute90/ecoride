@@ -36,7 +36,7 @@
     </div>
     </header>
 
-    <section class="zone_user">
+<section class="zone_espace">
 
 <?php
 
@@ -87,7 +87,9 @@ try {
 ?>
 	 
 
-    </section>
+</section>
+
+
 
     <footer>
         <div class="bt_footer">
