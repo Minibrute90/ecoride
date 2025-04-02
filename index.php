@@ -27,8 +27,10 @@
     <div class="second_rows">
             <nav class ="user">
                 <ul>
-                    <li><a href="inscription.php">Inscrivez-vous</Inscrivez-vous></a></li>
-                    <li><a href="connection.php">Connectez-vous</a></li>
+                    <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
+                        <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
+                    <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
             <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
@@ -37,37 +39,11 @@
     </header>
 
     <section class="presentation">
-        <article class="presentation">
-            <p class="paragraphe">
-                <b>EcoRide</b> est une <b>startup française</b> récemment créée avec une mission claire 
-                <b>réduire l'impact environnemental des déplacements en favorisant le covoiturage</b>. 
-                En adoptant une approche écologique, <b>EcoRide propose une solution innovante</b>. 
-            </p>
-            <p class="paragraphe">
-               <b>L’ambition d’EcoRide est de devenir la référence en matière de covoiturage pour les voyageurs 
-                soucieux de l’environnement</b> ainsi que ceux recherchant une alternative économique. 
-                La plateforme se concentre exclusivement sur les trajets en voiture, 
-                garantissant ainsi une expérience optimisée pour ses utilisateurs.
-            </p>
-            <p class="paragraphe">
-               <b>Avec EcoRide, chaque trajet devient un pas de plus vers une mobilité plus responsable et durable.</b>
-            </p>
+        <article>
+           
         </article>
 
-        <article class="presentation">
-            <div class="illustration_accueil">
-                <img src="img/illust_463.jpg" alt="illustration">
-            </div>
-            <div class="recherche">
-                    <h1 class="titre_recherche">Votre prochaine destination</h1>
-               <form action="#">
-                    <div class="position_recherche">
-                        <input class="accueil" type="text" placeholder="Votre destination" name="search">
-                        <input  type="submit" value="rechercher" onclick="#">
-                    </div>
-               </form>
-            </div>
-        </article>
+        
     </section>
 
     <footer>

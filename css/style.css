@@ -2,7 +2,7 @@
 
 * {
     font-family: "Inter", sans-serif;
-    font-size: large;
+    font-size: 16px;
     list-style: none;
     text-decoration: none;
     flex-wrap:initial;
@@ -34,6 +34,10 @@ p {
     font-weight: 200;
 }
 
+.picto_nav{
+    margin-right: -32px;
+}
+
 
 /*style header*/
 
@@ -41,42 +45,44 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 60px;
 }
 
 .first_rows {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content:left;
     align-items: center;
 }
 
 .second_rows {
-    margin-top: 20px;
-    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
 }
 
-.logo{
-    margin-top: 12px;
+.logo img{
+    width: 45px;
     margin-left: 40px;
-}
-
-.navbar {
-   margin-left: 80px;
+    justify-content: center;
 }
 
 .navbar ul {
-    width: 460px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px;
+    margin-left: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+}
+
+.navbar li{
+    margin-right: 40px;
 }
 
 .navbar a, nav.user a {
-    color :#51764B;
-    font-weight:200;
+    font-weight: 300;
+    color:#51764B
 }
 
 .navbar a:hover, nav.user a:hover{
@@ -84,17 +90,19 @@ header{
 }
 
 .navbar a.active {
-    font-weight: 900;
+    font-weight: 800;
     border-bottom: none;
 }
 
 nav.user ul{
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
 }
 
 nav.user li{
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 40px;
 }
 
 
