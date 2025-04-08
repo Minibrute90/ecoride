@@ -14,7 +14,7 @@
 <body class="site">
     <header>
     <div class="first_rows">
-        <div class="logo">
+        <div class="logo_ban">
             <img src="img/logo_200px.png" alt="logo ecoride">
         </div>
         <nav class="navbar">
@@ -38,20 +38,29 @@
     </div>
     </header>
 
-    <section class="presentation">
+    <section class="index">
         <article>
-           
+            <div class="logo_index">
+                <img src="img/logo_200px.png" alt="logo ecoride">
+            </div>
+            <div class="txt_accroche">
+
+            </div>
+                <h1>Bienvenue sur EcoRide</h1>
+                    La plateforme de covoiturage écologique qui vous permet de voyager tout en réduisant votre empreinte carbone
         </article>
 
         
     </section>
 
     <footer>
-            <div class="logo">
-                <img src="img/logo_200px.png" alt="logo ecoride">
-            </div>
-            <div class="bt_footer">
-                <a class="email" href="#">ecoride@gmail.com</a>
+        <div class="logo_ban">
+            <img src="img/logo_200px.png" alt="logo ecoride">
+        </div>
+        <div class="bt_footer">
+            <a class="email" href="#"><b>@</b> Nous contacter</a>
+            <div class="mention">
+                <img src="img/mention.png" alt="picto mentions légales">
                 <a class="mention" href="mention_legal.html" target="_blank">mention légal</a>
             </div>
         </div>

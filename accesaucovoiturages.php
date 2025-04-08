@@ -12,9 +12,9 @@
 </head>
 
 <body class="site">
-    <header>
+<header>
     <div class="first_rows">
-        <div class="logo">
+        <div class="logo_ban">
             <img src="img/logo_200px.png" alt="logo ecoride">
         </div>
         <nav class="navbar">
@@ -27,11 +27,14 @@
     <div class="second_rows">
             <nav class ="user">
                 <ul>
-                    <li><a href="inscription.php">Inscrivez-vous</Inscrivez-vous></a></li>
-                    <li><a href="connection.php">Connectez-vous</a></li>
+                    <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
+                        <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
+                    <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
+            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
-            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>  
+        
     </div>
     </header>
 
@@ -72,11 +75,13 @@
     </section>
 
     <footer>
+        <div class="logo_ban">
+            <img src="img/logo_200px.png" alt="logo ecoride">
+        </div>
         <div class="bt_footer">
-            <div class="position_email">
-                <a class="email" href="#">ecoride@gmail.com</a>
-            </div>
-            <div class="position_mention">
+            <a class="email" href="#"><b>@</b> Nous contacter</a>
+            <div class="mention">
+                <img src="img/mention.png" alt="picto mentions légales">
                 <a class="mention" href="mention_legal.html" target="_blank">mention légal</a>
             </div>
         </div>

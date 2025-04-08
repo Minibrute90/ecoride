@@ -1,13 +1,17 @@
-/*style global*/
+
+
+/*style global --------------------------------------------------------*/
 
 * {
     font-family: "Inter", sans-serif;
+    color: #51764B;
     font-size: 16px;
     list-style: none;
     text-decoration: none;
     flex-wrap:initial;
     margin:0;
     padding:0;
+    font-weight: 200;
 }
 
 body{
@@ -17,29 +21,11 @@ body{
 	min-height: 100vh;
 }
 
-input[type=text], input[type=password]{
-    padding-left:16px;
-    font-weight: 300;
-    font-style: italic;
-}
 
-input[type=date]{
-    padding-left:16px;
-    padding-right: 16px;
-    font-weight: 300;
-    font-style: italic;
-}
-
-p {
-    font-weight: 200;
-}
-
-.picto_nav{
-    margin-right: -32px;
-}
+/*--------------------------------------------------------------------*/
 
 
-/*style header*/
+/*style header -------------------------------------------------------*/
 
 header{
     display: flex;
@@ -64,11 +50,13 @@ header{
     align-items: center;
 }
 
-.logo img{
+.logo_ban img{
     width: 45px;
     margin-left: 40px;
     justify-content: center;
 }
+
+/*-------------------Navbar--------------------------------------------*/
 
 .navbar ul {
     margin-left: 200px;
@@ -80,19 +68,6 @@ header{
     margin-right: 40px;
 }
 
-.navbar a, nav.user a {
-    font-weight: 300;
-    color:#51764B
-}
-
-.navbar a:hover, nav.user a:hover{
-    border-bottom: 1px solid #51764B;
-}
-
-.navbar a.active {
-    font-weight: 800;
-    border-bottom: none;
-}
 
 nav.user ul{
     margin-right: 20px;
@@ -105,77 +80,227 @@ nav.user li{
     margin-left: 40px;
 }
 
+.picto_nav{
+    margin-right: -32px;
+}
 
-/*style section_accueil*/
 
-section.presentation {
-    flex:1;
-    margin-top: 40px;
+/*--------------------------------------------------------------------*/
+
+
+/*style footer -------------------------------------------------------*/
+
+footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color:white;
 }
 
-article.presentation {
+.bt_footer{
+    width: 300px;
+    display: flex;
+    margin-right: 40px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mention{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*style h ------------------------------------------------------------*/
+
+h1, h1.user_info, .message_inscprition, .pseudo{
+    color: #51764B;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-style: italic ;
+    border-bottom: 1px solid #51764B;
+}
+
+.h2_recherche-covoit{
+    margin-left: 4px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/*style font a -------------------------------------------------------*/
+
+.navbar a, nav.user a, .bt_footer a{
+    color: #51764B;
+    font-weight: 300;
+}
+
+.navbar a:hover, nav.user a:hover, .bt_footer a:hover{
+    border-bottom: 1px solid #51764B;
+}
+
+.navbar a.active {
+    font-weight: 800;
+    border-bottom: none;
+}
+
+.bouton_user a, .retour a{
+    color:white;
+}
+
+.bouton_user a:hover{
+    color:black;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*style champs de saisie ---------------------------------------------*/
+
+input[type=text], input[type=password]{
+    padding-left:16px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+input[type=date]{
+    padding-left:16px;
+    padding-right: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.zone_input input {
+    margin-top: 8px;
+    width: 400px;
+    height: 32px;
+    background-color: #EFF7D2;
+    border: 1px solid #51764B;
+    border-radius: 20px;
+}
+
+input.user{
+    margin-bottom: 12px;
+}
+
+
+/*boutons ---------------------------------------------------------------------*/
+
+
+.bouton_recherche_covoit, .bouton_user{
+    margin-top:32px;
     margin-right:40px;
-    margin-left:40px;
-    text-align: justify;
-    max-width: 500px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
 }
 
-.paragraphe {
-    margin-bottom: 20px;
-}
-
-.illustration_accueil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
-}
-
-.illustration_accueil img{
-    border-radius: 20px;
-}
-
-.titre_recherche {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-.position_recherche{
-    margin-top:20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.recherche form input{
-    height: 36px;
-    border: none;
-    border-radius: 10px;
-    
-}
-
-
-.recherche form [type=submit]{
-    height: 36px;
-    margin-top: 12px;
+.bouton_recherche_covoit [type=submit], .bouton_user [type="submit"], .retour li, .bouton_user li{
+    width: 120px;
+    height: 40px;
     background-color: #51764B;
     color:white;
-    font-size: 12px;
+    font-weight: 300;
     border: none;
     border-radius: 10px;
-    width:100%;
 }
 
-.recherche form [type=submit]:hover{
+.bouton_recherche_covoit [type=submit]:hover, .bouton_user [type="submit"]:hover, .retour li:hover, .bouton_user li:hover {
     background-color: #A8B47B;
     color: black;
 }
 
-/*style section accès covoiturages*/
+.bouton_user ul{
+    margin-top:80px;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+
+/*Animations -----------------------------------------------------------*/
+
+/*------------------------POUCE-----------------------------------------*/
+.anim_pouce{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top:56px;
+    transform: rotate(-45deg);
+
+}
+.anim_pouce img {
+    width:150px;
+    animation: zoom-in-zoom-out 1.5s ease infinite;
+}
+  
+@keyframes zoom-in-zoom-out {
+    0% {
+      scale: 100%;
+    }
+    50% {
+      scale: 150%;
+    }
+    100% {
+      scale: 100%;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*----------------------EYEPASSWORD--------------------------------------*/
+
+.zone_input .password-icon {
+    display: flex;
+    flex-direction: column;
+    align-items:last baseline;
+    margin-top: -40px;
+    margin-right: 12px;
+  }
+
+.zone_input .password-icon:hover {
+    cursor: pointer;
+    color: #ff4754;
+  }
+  
+.zone_input .password-icon .feather-eye-off {
+    display: none;
+  }
+
+/*--------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------*/
+
+
+/*style section_index ------------------------------------------------*/
+
+section.index {
+    flex:1;
+}
+
+.logo_index{
+    margin-top: 80px;
+    margin-left: 40px;
+    height: 160px;
+    display: flex;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/*style section accès covoiturages -----------------------------------*/
 
 section.zone_accescovoit{
     flex:1;
@@ -202,63 +327,6 @@ article.zone_accescovoit{
     justify-content:space-between;
 }
 
-
-.zone_input input {
-    margin-top: 8px;
-    width: 400px;
-    height: 32px;
-    background-color: #EFF7D2;
-    border: 1px solid #51764B;
-    border-radius: 20px;
-}
-
-.zone_input input:focus{
-    border: #ff4754;
-   
-}
-
-
-
-.zone_input .password-icon {
-    display: flex;
-    flex-direction: column;
-    align-items:last baseline;
-    margin-top: -40px;
-    margin-right: 12px;
-  }
-
-.zone_input  .password-icon:hover {
-    cursor: pointer;
-    color: #ff4754;
-  }
-  
-.zone_input .password-icon .feather-eye-off {
-    display: none;
-  }
-
-.bouton_recherche_covoit{
-    margin-top:32px;
-    margin-right:40px;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-}
-
-.bouton_recherche_covoit [type=submit]{
-    width: 120px;
-    height: 40px;
-    background-color: #51764B;
-    color:white;
-    font-weight: 300;
-    border: none;
-    border-radius: 10px;
-}
-
-.bouton_recherche_covoit [type=submit]:hover{
-    background-color: #A8B47B;
-    color: black;
-}
-
 article.resultat_covoit{
     margin-top:80px;
     margin-left: 40px;
@@ -277,13 +345,11 @@ article.resultat_covoit{
     border-bottom: 1px solid #51764B;
 }
 
-.h2_recherche-covoit{
-    margin-left: 4px;
-    font-weight: 300;
-    font-style: italic;
-}
 
-/*style section inscription & connection*/
+/*--------------------------------------------------------------------*/
+
+
+/*style section inscription & connection -----------------------------*/
 
 section.zone_user{
     flex: 1;
@@ -291,19 +357,6 @@ section.zone_user{
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-}
-
-h1.user_info, .message_inscprition, .pseudo{
-    color: #51764B;
-    margin-bottom: 40px;
-    font-size: 36px;
-    font-style: italic ;
-    border-bottom: 1px solid #51764B;
-
-}
-
-input.user{
-    margin-bottom: 12px;
 }
 
 .condition{
@@ -314,62 +367,6 @@ input.user{
 .condition p{
     font-size: 14px;
     font-style: italic;
-}
-
-.bouton_user{
-    margin-top:32px;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-}
-
-.bouton_user [type="submit"], .retour li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 120px;
-    height: 40px;
-    background-color: #51764B;
-    color:white;
-    font-weight: 300;
-    border: none;
-    border-radius: 10px;
-}
-
-.bouton_user [type="submit"]:hover, .retour li:hover{
-    background-color: #A8B47B;
-    color: black;
-}
-
-.bouton_user ul{
-    margin-top:80px;
-}
-
-.bouton_user li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 160px;
-    height: 40px;
-    background-color: #51764B;
-    font-weight: 300;
-    border-radius: 10px;
-}
-
-.bouton_user li:hover{
-    background-color: #A8B47B;
-    width: 160px;
-    height: 40px;
-}
-
-.bouton_user a, .retour a{
-    color:white;
-}
-
-.bouton_user a:hover{
-    color:black;
 }
 
 p.erreur{
@@ -385,34 +382,11 @@ ul.retour{
     align-items:center;
 }
 
-.anim_pouce{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    margin-top:56px;
-    transform: rotate(-45deg);
 
-}
+/*--------------------------------------------------------------------*/
 
-.anim_pouce img {
-    width:150px;
-    animation: zoom-in-zoom-out 1.5s ease infinite;
-  }
-  
-  @keyframes zoom-in-zoom-out {
-    0% {
-      scale: 100%;
-    }
-    50% {
-      scale: 150%;
-    }
-    100% {
-      scale: 100%;
-    }
-  }
 
-/*style espace utilisateur*/
+/*style espace utilisateur -------------------------------------------*/
 
 section.zone_espace{
     flex: 1;
@@ -421,23 +395,11 @@ section.zone_espace{
     align-content:flex-start;
 }
 
-/*style footer*/
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    background-color: white;
-}
+/*--------------------------------------------------------------------*/
 
 
-
-
-
-/*responsive*/
+/*responsive ---------------------------------------------------------*/
 
 .menu_hamburger{
     display: none;
@@ -567,3 +529,4 @@ footer {
 }
 
 
+/*---------------------------------------------------------------------------------------*/
