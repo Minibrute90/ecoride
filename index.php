@@ -47,11 +47,11 @@
     </section>
 
     <footer>
-        <div class="bt_footer">
-            <div class="position_email">
-                <a class="email" href="#">ecoride@gmail.com</a>
+            <div class="logo">
+                <img src="img/logo_200px.png" alt="logo ecoride">
             </div>
-            <div class="position_mention">
+            <div class="bt_footer">
+                <a class="email" href="#">ecoride@gmail.com</a>
                 <a class="mention" href="mention_legal.html" target="_blank">mention légal</a>
             </div>
         </div>
