@@ -44,17 +44,17 @@
         <article class="zone_accescovoit">
          
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Départ</i> </h1></div>
+                    <div class="titre_input" style ="color:#51764B"> 1. </div> <div class="decal">  <i>Départ</i> </div>
                         <input class="recherche_covoit" type="text" placeholder="Entrez votre ville de départ" name="search" required="required">
                 </div>
                 
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal">  <i>Arrivées</i> </h1></div>
+                    <div class="titre_input" style ="color:#51764B"> 2. </div> <div class="decal">  <i>Arrivées</i> </div>
                         <input class="recherche_covoit" type="text" placeholder="Entrez votre ville d'arrivée" name="search" required="required">
                 </div>
                 
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Date de votre trajet</i> </h1></div>
+                    <div class="titre_input" style ="color:#51764B"> 3. </div> <div class="decal"> <i>Date de votre trajet</i> </div>
                         <input class="recherche_covoit" type="date" placeholder="Entrez la date de votre trajet" name="search" required="required">
                     </h1>
                 </div> 

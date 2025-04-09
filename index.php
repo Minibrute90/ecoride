@@ -39,15 +39,15 @@
     </header>
 
     <section class="index">
-        <article>
+        
+        <article class="first_rows_index">
             <div class="logo_index">
                 <img src="img/logo_200px.png" alt="logo ecoride">
             </div>
             <div class="txt_accroche">
-
-            </div>
                 <h1>Bienvenue sur EcoRide</h1>
-                    La plateforme de covoiturage écologique qui vous permet de voyager tout en réduisant votre empreinte carbone
+                <p>La plateforme de covoiturage écologique qui vous permet de voyager tout en réduisant votre empreinte carbone.</p>
+            </div>
         </article>
 
         
