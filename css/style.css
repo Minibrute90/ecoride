@@ -5,12 +5,11 @@
 * {
     font-family: "Inter", sans-serif;
     color: #51764B;
-    font-size: 16px;
     list-style: none;
     text-decoration: none;
     margin:0;
     padding:0;
-    font-weight: 200;
+    flex-wrap: wrap;
 }
 
 body{
@@ -127,7 +126,14 @@ h1{
     font-size: 40px;
 }
 
-
+h2{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    font-style: italic;
+    font-weight: 450;
+    font-size: 32px;
+}
 
 .h2_recherche-covoit{
     margin-left: 4px;
@@ -288,25 +294,88 @@ section.index {
     flex:1;
 }
 
-.first_rows_index{
+article.first_rows_index{
     width: 100%;
-    display:flex;
-    flex-direction: row;
-    align-items:first baseline
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
 }
 
-.logo_index{
-    margin-top: 80px;
+img.logo_index{
+    margin-top:80px;
     margin-left: 40px;
     height: 160px;
-    display: flex;
 }
 
 .txt_accroche{
+    width: 100%;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.txt_accroche p{
+    font-style: italic;
+}
+
+article.second_rows_index{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.item{
+    letter-spacing: 1px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.bulle{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 160px;
+    border: #51764B 1px solid;
+    border-radius: 20px;
+}
+
+.text_bulle{
+    width: 320px;
+    text-align: center;
+}
+
+
+.picto_feuille{
+    margin-left: 8px;
+}
+
+.euro{
+    margin-left: 8px;
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.tree_car{
+    margin-top: -40px;
+}
+
+.three_rows_index{
+    margin-top: 100px;
+    background-color: #51764B;
+    width: 100%;
+    height: 200px;
+}
+
 
 
 /*--------------------------------------------------------------------*/

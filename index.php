@@ -30,7 +30,7 @@
                     <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
                         <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
                     <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
-                    <li><a href="inscription.php">S'inscrire</a></li>
+                        <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
             <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
@@ -41,13 +41,39 @@
     <section class="index">
         
         <article class="first_rows_index">
-            <div class="logo_index">
-                <img src="img/logo_200px.png" alt="logo ecoride">
-            </div>
+                <img class="logo_index" src="img/logo_200px.png" alt="logo ecoride">
             <div class="txt_accroche">
                 <h1>Bienvenue sur EcoRide</h1>
-                <p>La plateforme de covoiturage écologique qui vous permet de voyager tout en réduisant votre empreinte carbone.</p>
+                <p><b>La plateforme de covoiturage écologique</b> qui vous permet de voyager tout en </br> réduisant votre empreinte carbone.</p>
             </div>
+        </article>
+
+        <article class="second_rows_index">
+                <div class="item">
+                   <div class=""> <h2>Ecologique <img class="picto_feuille" src="img/feuille.png" alt="picto feuille ecologique"></h2> </div>
+                    <p>Covoiturez, respirez mieux</p>
+                    <div class="bulle">
+                        <p class="text_bulle">Réduire l'impact environnemental des déplacements en favorisant le covoiturage.</p> 
+                    </div>
+                </div>
+                <div class="item">
+                    <h2>Economique <div class="euro">€</div></h2>
+                    <p>Covoiturez, dépensez moins</p>
+                    <div class="bulle">
+                        <p class="text_bulle">Devenir la référence en matière de covoiturage pour les voyageurs soucieux de l’environnement ainsi que ceux recherchant une alternative économique. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="tree_car" src="img/tree_car.png" alt="picto arbre et voiture">
+                    <p>Covoiturez, voyagez malin</p>
+                    <div class="bulle">
+                        <p class="text_bulle">Avec EcoRide, chaque trajet devient un pas de plus vers une mobilité plus responsable et durable.<p>
+                    </div>
+                </div>
+        </article>
+
+        <article class="three_rows_index">
+            
         </article>
 
         
