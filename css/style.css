@@ -135,8 +135,10 @@ h2{
     font-size: 32px;
 }
 
-.h2_recherche-covoit{
-    margin-left: 4px;
+
+h2.trajet_index{
+    margin-top: 16px;
+    color: #EFF7D2;
     font-weight: 300;
     font-style: italic;
 }
@@ -201,6 +203,16 @@ input.user{
 
 /*boutons ---------------------------------------------------------------------*/
 
+.bouton_recherche_covoit_index [type=submit]{
+    width: 120px;
+    height: 40px;
+    background-color:#EFF7D2;
+    color:#51764B;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
 
 .bouton_recherche_covoit, .bouton_user{
     margin-top:32px;
@@ -215,7 +227,7 @@ input.user{
     height: 40px;
     background-color: #51764B;
     color:white;
-    font-weight: 300;
+    font-weight: 600;
     border: none;
     border-radius: 10px;
 }
@@ -369,12 +381,17 @@ article.second_rows_index{
     margin-top: -40px;
 }
 
-.three_rows_index{
+.zone_accescovoit_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 100px;
     background-color: #51764B;
     width: 100%;
     height: 200px;
 }
+
+
 
 
 
