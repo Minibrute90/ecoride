@@ -203,7 +203,25 @@ input.user{
 
 /*boutons ---------------------------------------------------------------------*/
 
+.bouton_recherche_covoit_index{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.bouton_recherche_covoit, .bouton_user{
+    margin-top:32px;
+    margin-right:40px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+
 .bouton_recherche_covoit_index [type=submit]{
+    margin-top: 20px;
     width: 120px;
     height: 40px;
     background-color:#EFF7D2;
@@ -212,14 +230,6 @@ input.user{
     font-weight: 600;
     border: none;
     border-radius: 10px;
-}
-
-.bouton_recherche_covoit, .bouton_user{
-    margin-top:32px;
-    margin-right:40px;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
 }
 
 .bouton_recherche_covoit [type=submit], .bouton_user [type="submit"], .retour li, .bouton_user li{
@@ -232,7 +242,8 @@ input.user{
     border-radius: 10px;
 }
 
-.bouton_recherche_covoit [type=submit]:hover, .bouton_user [type="submit"]:hover, .retour li:hover, .bouton_user li:hover {
+.bouton_recherche_covoit [type=submit]:hover, .bouton_user [type="submit"]:hover, .retour li:hover, .bouton_user li:hover, .bouton_recherche_covoit_index [type=submit]:hover {
+    font-style: italic;
     background-color: #A8B47B;
     color: black;
 }
@@ -385,11 +396,30 @@ article.second_rows_index{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: nowrap;
     margin-top: 100px;
     background-color: #51764B;
     width: 100%;
-    height: 200px;
 }
+
+.trajet_index{
+    display: flex;
+    justify-content: center;
+}
+
+.zone_bande_covoit{
+    margin-top: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.titre_input_index{
+    color: #EFF7D2;
+    font-style: italic;
+}
+
+
 
 
 
@@ -406,15 +436,10 @@ section.zone_accescovoit{
     flex-direction:column;
 }
 
-.titre_input{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.titre_input{  
+    font-style: italic;
 }
 
-.decal{
-    margin-left: 4px;
-}
 
 article.zone_accescovoit{
     margin-top: 100px;

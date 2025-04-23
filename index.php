@@ -74,31 +74,30 @@
 
         <article class="zone_accescovoit_index">
 
-        <h2 class="trajet_index">Votre prochain trajet</h2>
+        <div><h2 class="trajet_index">Votre prochain trajet</h2></div>
 
         <div class="zone_bande_covoit">
          
-         <div class="zone_input">
-             <div class="titre_input"> 1. </div> <div class="decal">  <i>Départ</i> </div>
-                 <input class="recherche_covoit" type="text" placeholder="Entrez votre ville de départ" name="search" required="required">
-         </div>
+            <div class="zone_input">
+                <div class="titre_input_index"> 1. Départ </div>
+                    <input class="recherche_covoit" type="text" placeholder="Entrez votre ville de départ" name="search" required="required">
+            </div>
          
-         <div class="zone_input">
-             <div class="titre_input"> 2. </div> <div class="decal">  <i>Arrivées</i> </div>
-                 <input class="recherche_covoit" type="text" placeholder="Entrez votre ville d'arrivée" name="search" required="required">
-         </div>
-         
-         <div class="zone_input">
-             <div class="titre_input"> 3. </div> <div class="decal"> <i>Date de votre trajet</i> </div>
-                 <input class="recherche_covoit" type="date" placeholder="Entrez la date de votre trajet" name="search" required="required">
-             </h1>
-         </div> 
-
-         <div class="bouton_recherche_covoit_index">
-             <input type="submit" value="Rechercher" onclick="#">
-         </div>
+            <div class="zone_input">
+                <div class="titre_input_index"> 2. Arrivées </div>
+                    <input class="recherche_covoit" type="text" placeholder="Entrez votre ville d'arrivée" name="search" required="required">
+            </div>
+    
+            <div class="zone_input">
+                <div class="titre_input_index"> 3. Date de votre trajet </div>
+                    <input class="recherche_covoit" type="date" placeholder="Entrez la date de votre trajet" name="search" required="required">
+            </div> 
 
         </div>
+
+        <div class="bouton_recherche_covoit_index">
+            <input type="submit" value="Rechercher" onclick="#">
+         </div>
         
         </article>
 
