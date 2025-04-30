@@ -2,7 +2,10 @@
 
 /*style global --------------------------------------------------------*/
 
+
+
 * {
+    letter-spacing: 1px;
     font-family: "Inter", sans-serif;
     color: #51764B;
     list-style: none;
@@ -18,6 +21,8 @@ body{
 	flex-direction: column;
 	min-height: 100vh;
 }
+
+
 
 
 /*--------------------------------------------------------------------*/
@@ -66,7 +71,6 @@ header{
     margin-right: 40px;
 }
 
-
 nav.user ul{
     margin-right: 20px;
     display: flex;
@@ -99,7 +103,7 @@ footer {
 }
 
 .bt_footer{
-    width: 300px;
+    width: 4%;
     display: flex;
     margin-right: 40px;
     justify-content: space-between;
@@ -137,7 +141,9 @@ h2{
 
 
 h2.trajet_index{
-    margin-top: 16px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
     color: #EFF7D2;
     font-weight: 300;
     font-style: italic;
@@ -188,8 +194,6 @@ input[type=date]{
 }
 
 .zone_input input {
-    margin-top: 8px;
-    width: 400px;
     height: 32px;
     background-color: #EFF7D2;
     border: 1px solid #51764B;
@@ -315,28 +319,32 @@ input.user{
 
 section.index {
     flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 article.first_rows_index{
-    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;  
 }
 
 img.logo_index{
-    margin-top:80px;
-    margin-left: 40px;
-    height: 160px;
+    display: flex;  
+    width: 160px;
 }
 
 .txt_accroche{
-    width: 100%;
-    margin-top: -150px;
-    display: flex;
+    flex:1;
+    margin-top: 40px;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
+    text-align: center;
+    
 }
 
 .txt_accroche p{
@@ -344,16 +352,14 @@ img.logo_index{
 }
 
 article.second_rows_index{
-    margin-top: 80px;
-    width: 100%;
+    margin: 40px;
     display: flex;
     flex-direction: row; 
-    justify-content: space-around; 
+    justify-content:space-between; 
     align-items: center;
 }
 
 .item{
-    letter-spacing: 1px;
     width: 360px;
     display: flex;
     flex-direction: column;
@@ -393,28 +399,32 @@ article.second_rows_index{
 }
 
 .zone_accescovoit_index{
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #51764B;
+}
+
+
+.zone_covoit_index{
+    margin-top:40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.zone_input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: nowrap;
-    margin-top: 100px;
-    background-color: #51764B;
-    width: 100%;
-}
-
-.trajet_index{
-    display: flex;
-    justify-content: center;
-}
-
-.zone_bande_covoit{
-    margin-top: 20px;
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
+    width: 33%;
 }
 
 .titre_input_index{
+    margin-bottom: 12px;
     color: #EFF7D2;
     font-style: italic;
 }
@@ -536,43 +546,43 @@ section.zone_espace{
     display: none;
 }
 
+.nav_responsive{
+    display: none;
+}
+
 .illustration_accueil img{
     max-width: 100%;
     height: auto;
 }
 
-@media screen and (max-width: 1300px) {
+
+
+@media screen and (max-width: 1100px) {
 
     header{
         display: flex;
         flex-direction:column;
         justify-content:center;
+        background-color:#EFF7D2;
     }
 
-
+    .logo_ban{
+        display: none;
+    }
 
     .navbar{
         padding: 0px;
     }
 
-    .first_rows{
-        margin-top: 40px;
-        display: flex;
-        flex-direction:row ;
-        justify-content:center;
-    }
-
     nav.user{
-        display: flex;
-        flex-direction:row ;
-        justify-content:center;
+        display: none;
     }
     
     .menu_hamburger{
         display: block;
         position: absolute;
         top: 20px;
-        right: 20px;
+        right:20px;
     }
 
     .navbar{
@@ -581,16 +591,20 @@ section.zone_espace{
         position: absolute;
         background-color: rgba(rgba(255, 255, 255, 0.54), white, white, 0.5);
         backdrop-filter: blur(8px);    
-        height: 100%;
-        width: 250px;
+        width: 280px;
+        height:100%;
         border-radius: 0px;
-        margin-left: -200%;
+        margin-left: 0px;
         transition: all 0.5s ease;
+    }
+
+    .nav_responsive{
+        display: block;
     }
 
     .mobile_menu{
         margin-top:0px;
-        margin-left:-20px;
+        margin-left:-500px;
     }
 
     .mobile_menu a.active {
@@ -602,14 +616,28 @@ section.zone_espace{
         background-color: transparent;
         position: absolute;
         top:30px;
-        left:15px;
+        left:-150px;
         display: flex;
         flex-direction: column;
     }
 
     .navbar li{
+        width: 200px;
         margin-top:20px;
     }
+
+    article.first_rows_index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    img.logo_index{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
 
     article.zone_accescovoit{
         display:flex;
@@ -619,11 +647,10 @@ section.zone_espace{
 
     .zone_input input{
         width: 100%;
-    }
-
-    .zone_input input{
         margin-bottom: 12px;
     }
+
+
 
     .bouton_recherche_covoit{
         margin-right: 20px;

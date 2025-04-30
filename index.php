@@ -20,7 +20,11 @@
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="index.php">Page d'accueil</a></li>
-                <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
+                <li><a href="accesaucovoiturages.php">Accès aux covoiturages</a></li>
+                <div class="nav_responsive">
+                    <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <li><a href="inscription.php">S'inscrire</a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -32,9 +36,8 @@
                     <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
                         <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
-            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
-        
+            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div> 
     </div>
     </header>
 
@@ -76,7 +79,7 @@
 
         <div><h2 class="trajet_index">Votre prochain trajet</h2></div>
 
-        <div class="zone_bande_covoit">
+        <div class="zone_covoit_index">
          
             <div class="zone_input">
                 <div class="titre_input_index"> 1. Départ </div>
