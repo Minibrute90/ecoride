@@ -97,13 +97,11 @@ footer {
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    width: 100%;
-    height: 80px;
+    height: 100px;
     background-color:white;
 }
 
 .bt_footer{
-    width: 4%;
     display: flex;
     margin-right: 40px;
     justify-content: space-between;
@@ -592,7 +590,7 @@ section.zone_espace{
         background-color: rgba(rgba(255, 255, 255, 0.54), white, white, 0.5);
         backdrop-filter: blur(8px);    
         width: 280px;
-        height:100%;
+        height:200%;
         border-radius: 0px;
         margin-left: 0px;
         transition: all 0.5s ease;
@@ -632,12 +630,31 @@ section.zone_espace{
         align-items: center;
     }
 
-    
+    .txt_accroche p{
+        margin-top: 20px;
+    }
+
     img.logo_index{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
 
+    
+    article.second_rows_index{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -20px;
+    }
+
+    .item{
+        margin-top: 40px;
+    }
+
+    .item:last-child{
+        margin-top: 60px;
+    }
 
     article.zone_accescovoit{
         display:flex;
@@ -650,6 +667,18 @@ section.zone_espace{
         margin-bottom: 12px;
     }
 
+
+    .zone_covoit_index{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .zone_input{
+        width: 90%;
+        margin-right: 40px;
+    }
 
 
     .bouton_recherche_covoit{
@@ -677,10 +706,12 @@ section.zone_espace{
         margin-right: 0px;
       }
 
-
+    
     .bt_footer{
-        margin-left: 20px;
-        margin-right: 20px;;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 40px;
+        
     }
 
     
