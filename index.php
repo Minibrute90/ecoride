@@ -52,27 +52,47 @@
         </article>
 
         <article class="second_rows_index">
+
                 <div class="item">
                    <div class=""> <h2>Ecologique <img class="picto_feuille" src="img/feuille.png" alt="picto feuille ecologique"></h2> </div>
                     <p>Covoiturez, respirez mieux</p>
                     <div class="bulle">
-                        <p class="text_bulle">Réduire l'impact environnemental des déplacements en favorisant le covoiturage.</p> 
+                        <img class="image" src="img/paysage.jpg" alt="femme avec un sourire" >
+                        <div class="overlay">    
+                            <div class="text">
+                               <p>Réduire l'impact environnemental des déplacements en favorisant le covoiturage.</p> 
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="item">
                     <h2>Economique <div class="euro">€</div></h2>
-                    <p>Covoiturez, dépensez moins</p>
+                    <h3>Covoiturez, dépensez moins</h3>
                     <div class="bulle">
-                        <p class="text_bulle">Devenir la référence en matière de covoiturage pour les voyageurs soucieux de l’environnement ainsi que ceux recherchant une alternative économique. </p>
+                        <img class="image" src="img/economique.jpg" alt="femme avec un sourire" >
+                        <div class="overlay">
+                            <div class="text">
+                                <p>Devenir la référence en matière de covoiturage 
+                                pour les voyageurs soucieux de l’environnement ainsi que ceux recherchant une alternative économique.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="item">
                     <img class="tree_car" src="img/tree_car.png" alt="picto arbre et voiture">
                     <p>Covoiturez, voyagez malin</p>
                     <div class="bulle">
-                        <p class="text_bulle">Avec EcoRide, chaque trajet devient un pas de plus vers une mobilité plus responsable et durable.<p>
+                        <img class="image" src="img/paysage_2.jpg" alt="femme avec un sourire" >
+                        <div class="overlay">
+                            <div class="text">
+                                <p>Avec EcoRide, chaque trajet devient un pas de plus vers une mobilité plus responsable et durable.<p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
         </article>
 
         <article class="zone_accescovoit_index">
