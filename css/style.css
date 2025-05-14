@@ -273,6 +273,13 @@ input.user{
     border-radius: 20px;
 }
 
+.savoir{
+    margin-top: -20px;
+    font-style: italic;
+    font-weight: 500;
+    color: #fff;
+}
+
 .bulle{
     position: relative;
     margin-top: 12px;
@@ -287,6 +294,7 @@ input.user{
 
 .overlay {
     position: absolute;
+    border-radius: 18px;
     bottom: 100%;
     left: 0;
     right: 0;
