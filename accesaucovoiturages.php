@@ -20,7 +20,11 @@
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="index.php">Page d'accueil</a></li>
-                <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
+                <li><a href="accesaucovoiturages.php">Accès aux covoiturages</a></li>
+                <div class="nav_responsive">
+                    <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <li><a href="inscription.php">S'inscrire</a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -30,13 +34,20 @@
                     <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
                         <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
                     <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
-                    <li><a href="inscription.php">S'inscrire</a></li>
+                        <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
-            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
-        
+            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div> 
     </div>
     </header>
+
+    <article class="first_rows_index">
+                <img class="logo_index" src="img/logo_200px.png" alt="logo ecoride">
+            <div class="txt_accroche">
+                <h1>Trouver son prochain covoiturage</h1>
+                <p>Choisissez le lieu départ et votre destination, la date du voyage et nous nous occupons du reste.</p>
+            </div>
+    </article>
 
     <section class="zone_accescovoit">
         <form action="#">
@@ -69,7 +80,7 @@
 
         <article class="resultat_covoit">
 
-        <div class="titre_resultat_covoit"><h2>Résultats de votre</h2><h2 class="h2_recherche-covoit">RECHERCHE</h2></div>
+        <h2>Résultats de votre recherche</h2>
 
         </article>
     </section>

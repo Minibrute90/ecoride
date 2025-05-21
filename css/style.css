@@ -23,6 +23,13 @@ body{
 }
 
 
+td{
+    width:400px;
+    height: 40px;
+    
+}
+
+
 
 
 /*--------------------------------------------------------------------*/
@@ -128,6 +135,11 @@ h1{
     font-size: 40px;
 }
 
+h1.pseudo{
+    margin-top: 40px;
+    margin-bottom: 0px;  
+}
+
 h2{
     display: flex;
     flex-direction: row;
@@ -178,7 +190,12 @@ h2.trajet_index{
 
 /*style champs de saisie ---------------------------------------------*/
 
+form{
+    margin-top: -80px;
+}
+
 input[type=text], input[type=password]{
+    width: 200px;
     padding-left:16px;
     font-weight: 300;
     font-style: italic;
@@ -199,6 +216,7 @@ input[type=date]{
 }
 
 input.user{
+    width: 100%;
     margin-bottom: 12px;
 }
 
@@ -216,7 +234,6 @@ input.user{
 
 .bouton_recherche_covoit, .bouton_user{
     margin-top:32px;
-    margin-right:40px;
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
@@ -273,13 +290,6 @@ input.user{
     border-radius: 20px;
 }
 
-.savoir{
-    margin-top: -20px;
-    font-style: italic;
-    font-weight: 500;
-    color: #fff;
-}
-
 .bulle{
     position: relative;
     margin-top: 12px;
@@ -294,7 +304,6 @@ input.user{
 
 .overlay {
     position: absolute;
-    border-radius: 18px;
     bottom: 100%;
     left: 0;
     right: 0;
@@ -457,7 +466,7 @@ article.second_rows_index{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 33%;
+    width: 300px;
 }
 
 .titre_input_index{
@@ -537,6 +546,23 @@ section.zone_user{
     align-content: center;
 }
 
+form.inscription{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.column{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
 .condition{
     margin-top: 24px;
     border-bottom: 1px solid #51764B;
@@ -567,11 +593,39 @@ ul.retour{
 /*style espace utilisateur -------------------------------------------*/
 
 section.zone_espace{
+    margin-left: 40px;
     flex: 1;
     display: flex;
-    flex-direction: row;
-    align-content:flex-start;
+    flex-direction: column;
+    align-content:center;
 }
+
+.perso_photo_id{
+    border-radius: 20px;
+    width: 10%;
+    object-fit: contain;
+}
+
+
+.info_utilisateur{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.info_generale{
+    margin-left: 96px;
+}
+
+table.info_utilisateur{
+    margin-top: 8px;
+}
+
+.lien_info_chauffeur{
+    margin-top: 12px;
+}
+
+
 
 
 /*--------------------------------------------------------------------*/
@@ -741,6 +795,11 @@ section.zone_espace{
     article.presentation, article.zone_user{
         margin-top: 40px;
     }
+
+    form.inscription{
+        flex-direction: column; 
+    } 
+
 
     input[type=text], input[type=password]{
         font-size: 12px;

@@ -20,7 +20,11 @@
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="index.php">Page d'accueil</a></li>
-                <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
+                <li><a href="accesaucovoiturages.php">Accès aux covoiturages</a></li>
+                <div class="nav_responsive">
+                    <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <li><a href="inscription.php">S'inscrire</a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -30,27 +34,32 @@
                     <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
                         <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
                     <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
-                    <li><a href="inscription.php">S'inscrire</a></li>
+                        <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
-            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
-        
+            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div> 
     </div>
     </header>
+
+    <article class="first_rows_index">
+                <img class="logo_index" src="img/logo_200px.png" alt="logo ecoride">
+            <div class="txt_accroche">
+                <h1>. Connexion</h1>
+                <p>Merci d'entrer vos identifiants</p>
+            </div>
+    </article>
 
     <section class="zone_user">
         <form method="post" action="espace_utilisateur.php">
         <article class="zone_user">
 
-                <h1 class="user_info">. Connection </h1>
-
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Pseudo</i> </h1></div>
+                    <h2>1. Pseudo</h2>
                         <input class="user" type="text" placeholder="Entrez un pseudo" name="pseudo" id="pseudo" required="required">
                 </div>
                 
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal"> <i>Mot de passe</i> </h1></div>
+                    <h2>2. Mot de passe</h2>
                         <input class="user" type="password" placeholder="Entrez votre mot de passe" name="motdepasse" id="motdepasse" required="required">
                 
                         <div class="password-icon">

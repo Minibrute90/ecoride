@@ -58,7 +58,6 @@
                     <p>Covoiturez, respirez mieux</p>
                     <div class="bulle">
                         <img class="image" src="img/paysage.jpg" alt="femme avec un sourire" >
-                        <div class="savoir"> En savoir + </div>
                         <div class="overlay">    
                             <div class="text">
                                <p>Réduire l'impact environnemental des déplacements en favorisant le covoiturage.</p> 
@@ -72,7 +71,6 @@
                     <h3>Covoiturez, dépensez moins</h3>
                     <div class="bulle">
                         <img class="image" src="img/economique.jpg" alt="femme avec un sourire" >
-                        <div class="savoir"> En savoir + </div>
                         <div class="overlay">
                             <div class="text">
                                 <p>Devenir la référence en matière de covoiturage 
@@ -87,7 +85,6 @@
                     <p>Covoiturez, voyagez malin</p>
                     <div class="bulle">
                         <img class="image" src="img/paysage_2.jpg" alt="femme avec un sourire" >
-                        <div class="savoir"> En savoir + </div>
                         <div class="overlay">
                             <div class="text">
                                 <p>Avec EcoRide, chaque trajet devient un pas de plus vers une mobilité plus responsable et durable.<p>

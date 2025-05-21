@@ -28,13 +28,17 @@
 <body class="site">
 <header>
     <div class="first_rows">
-        <div class="logo">
+        <div class="logo_ban">
             <img src="img/logo_200px.png" alt="logo ecoride">
         </div>
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="index.php">Page d'accueil</a></li>
-                <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
+                <li><a href="accesaucovoiturages.php">Accès aux covoiturages</a></li>
+                <div class="nav_responsive">
+                    <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <li><a href="inscription.php">S'inscrire</a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -44,11 +48,10 @@
                     <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
                         <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
                     <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
-                    <li><a href="inscription.php">S'inscrire</a></li>
+                        <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
-            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
-        
+            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div> 
     </div>
     </header>
 
@@ -76,13 +79,13 @@ if($resultatVerif == 0){
 
 $pdoStat = $bdd->prepare('INSERT INTO `utilisateur` VALUES (NULL,:nom, :prenom, :email, :motdepasse, :telephone, :adresse, :date_naissance, :photo, :pseudo )');
 
-$pdoStat->bindValue(':nom', $_POST['nom']=NULL, PDO::PARAM_STR);
-$pdoStat->bindValue(':prenom', $_POST['prenom']=NULL, PDO::PARAM_STR);
+$pdoStat->bindValue(':nom', $_POST['nom'], PDO::PARAM_STR);
+$pdoStat->bindValue(':prenom', $_POST['prenom'], PDO::PARAM_STR);
 $pdoStat->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
 $pdoStat->bindValue(':motdepasse', $_POST['motdepasse'], PDO::PARAM_STR);
-$pdoStat->bindValue(':telephone', $_POST['telephone']=NULL, PDO::PARAM_STR);
-$pdoStat->bindValue(':adresse', $_POST['adresse']=NULL, PDO::PARAM_STR);
-$pdoStat->bindValue(':date_naissance', $_POST['date_naissance']=NULL, PDO::PARAM_STR);
+$pdoStat->bindValue(':telephone', $_POST['telephone'], PDO::PARAM_STR);
+$pdoStat->bindValue(':adresse', $_POST['adresse'], PDO::PARAM_STR);
+$pdoStat->bindValue(':date_naissance', $_POST['date_naissance'], PDO::PARAM_STR);
 $pdoStat->bindValue(':photo', $_POST['photo']=NULL, PDO::PARAM_STR);
 $pdoStat->bindValue(':pseudo', $_POST['pseudo'], PDO::PARAM_STR);
 

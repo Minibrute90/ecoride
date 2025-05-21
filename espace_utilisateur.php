@@ -21,7 +21,11 @@
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="index.php">Page d'accueil</a></li>
-                <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
+                <li><a href="accesaucovoiturages.php">Accès aux covoiturages</a></li>
+                <div class="nav_responsive">
+                    <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <li><a href="inscription.php">S'inscrire</a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -31,11 +35,10 @@
                     <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
                         <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
                     <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
-                    <li><a href="inscription.php">S'inscrire</a></li>
+                        <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
-            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
-        
+            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div> 
     </div>
     </header>
 
@@ -67,15 +70,23 @@ try {
         // Vérification du mot de passe avec password_verify()
         if ($_POST['motdepasse'] === $infoop->motdepasse)  {
             // Affichage des informations de l'utilisateur
+            echo "<div class='info_utilisateur'>";
+            echo "<img class='perso_photo_id' src='img/perso_photo_id.png' alt='photo d'identité'>";
+            echo "<div class='info_generale'>";
             echo "<h1 class='pseudo'>" . '. Espace de ' . ($infoop->pseudo) . "</h1>\n";
-            echo "<table class=''>\n";
-            echo "    <tr><td class=''>NOM</td><td class=''>" . ($infoop->nom) . "</td></tr>\n";
-            echo "    <tr><td class=''>Prénom</td><td class=''>" . ($infoop->prenom) . "</td></tr>\n";
-            echo "    <tr><td class=''>Email</td><td class=''>" . ($infoop->email) . "</td></tr>\n";
-            echo "    <tr><td class=''>Téléphone</td><td class=''>" . ($infoop->telephone) . "</td></tr>\n";
-            echo "    <tr><td class=''>Adresse</td><td class=''>" . ($infoop->adresse) . "</td></tr>\n";
-            echo "    <tr><td class=''>Date de naissance</td><td class=''>" . ($infoop->date_naissance) . "</td></tr>\n";
+            echo "<table class='info_utilisateur'>\n";
+            echo "    <tr><td class='name_donnee'>NOM</td><td class=''>" . ($infoop->nom) . "</td></tr>\n";
+            echo "    <tr><td class='name_donnee'>Prénom</td><td class=''>" . ($infoop->prenom) . "</td></tr>\n";
+            echo "    <tr><td class='name_donnee'>Email</td><td class=''>" . ($infoop->email) . "</td></tr>\n";
+            echo "    <tr><td class='name_donnee'>Téléphone</td><td class=''>" . ($infoop->telephone) . "</td></tr>\n";
+            echo "    <tr><td class='name_donnee'>Adresse</td><td class=''>" . ($infoop->adresse) . "</td></tr>\n";
+            echo "    <tr><td class='name_donnee'>Date de naissance</td><td class=''>" . ($infoop->date_naissance) . "</td></tr>\n";
             echo "</table>\n";
+            echo "<h1 class='pseudo'>Mes informations chauffeur</h1>\n";
+            echo "<div class='lien_info_chauffeur'>\n";
+            echo "<a href='info_conducteur'> + Rentrer ou modifier mes informations de chauffeur</a>\n";
+            echo "</div>"; 
+            echo "</div>";  
         } else {
             echo "<p class='erreur'>Mot de passe incorrect.</p>";
             echo "<ul class='retour'><li><a href='connection.php'>Reessayer</a></li></ul>";
@@ -83,6 +94,7 @@ try {
         } else {
             echo "<p class='erreur'>Aucun utilisateur trouvé avec ce pseudo.</p>";
             echo "<ul class='retour'><li><a href='connection.php'>Reessayer</a></li></ul>";
+            echo "</div>";
     }
 } catch (PDOException $e) {
     echo "<p class='erreur'>Erreur : " . $e->getMessage() . "</p>";

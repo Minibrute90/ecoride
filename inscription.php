@@ -21,7 +21,11 @@
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="index.php">Page d'accueil</a></li>
-                <li><a href="accesaucovoiturages.php">Accès au covoiturages</a></li>
+                <li><a href="accesaucovoiturages.php">Accès aux covoiturages</a></li>
+                <div class="nav_responsive">
+                    <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
+                    <li><a href="inscription.php">S'inscrire</a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -31,32 +35,66 @@
                     <img class="picto_nav" src="img/perso.png" alt="picto espace personnel">
                         <li><a href="connection.php">Mon espace</Inscrivez-vous></a></li>
                     <img class="picto_nav" src="img/inscription.png" alt="picto espace personnel">
-                    <li><a href="inscription.php">S'inscrire</a></li>
+                        <li><a href="inscription.php">S'inscrire</a></li>
                 <ul>
-            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div>
             </nav>
-        
+            <div class="menu_hamburger"><img src="img/bouton_burger.png" alt="menu hamburger"></div> 
     </div>
     </header>
 
-    <section class="zone_user">
-        <form method="post" action="ok_inscription.php">
-        <article class="zone_user">
+    <article class="first_rows_index">
+                <img class="logo_index" src="img/logo_200px.png" alt="logo ecoride">
+            <div class="txt_accroche">
+                <h1>. Inscription</h1>
+                <p>Merci d'entrer toutes les informations</p>
+            </div>
+    </article>
 
-                <h1 class="user_info">. Inscription au site </h1>
+    <section class="form_inscription">
+        <form class="inscription" method="post" action="ok_inscription.php">
+            <article class="column">
 
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 1.</h1><h1 class="decal">  <i>Pseudo</i> </h1></div>
+                    <h3>Pseudo</h3>
                         <input class="user" type="text" placeholder="Entrez un pseudo" name="pseudo" id="pseudo" required="required">
                 </div>
-                
+
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 2. </h1><h1 class="decal">  <i>Email</i> </h1></div>
+                    <h3>Nom</h3>
+                        <input class="user" type="text" placeholder="Entrez votre NOM" name="nom" id="nom" required="required">
+                </div>
+
+                <div class="zone_input">
+                    <h3>Prénom</h3>
+                        <input class="user" type="text" placeholder="Entrez votre Prénom" name="prenom" id="prenom" required="required">
+                </div>
+
+                <div class="zone_input">
+                    <h3>Date de naissance</h3>
+                        <input class="user" type="date" placeholder="Entrez votre date de naissance" name="date_naissance" id="date_naissance" required="required">
+                </div>
+
+            </article>
+
+            <article class="column">
+
+                <div class="zone_input">
+                    <h3>Téléphone</h3>
+                        <input class="user" type="text" placeholder="Entrez votre téléphone" name="telephone" id="telephone" required="required">
+                </div>
+
+                <div class="zone_input">
+                    <h3>Adresse</h3>
+                        <input class="user" type="text" placeholder="Entrez votre adresse" name="adresse" id="adresse" required="required">
+                </div>
+
+                <div class="zone_input">
+                    <h3>Email</h3>
                         <input class="user" type="text" placeholder="Entrez votre addresse mail" name="email" id="email" required="required">
                 </div>
                 
                 <div class="zone_input">
-                    <div class="titre_input"><h1 style ="color:#51764B"> 3. </h1><h1 class="decal"> <i>Mot de passe</i> </h1></div>
+                    <h3>Mot de passe</h3>
                         <input class="user" type="password" placeholder="Entrez votre mot de passe" name="motdepasse" id="motdepasse" required >
                     
                     <div class="password-icon">
@@ -77,7 +115,8 @@
                 <div class="bouton_user">
                     <input type="submit" value="valider" onclick="#">
                 </div>
-                
+            
+            </article>
         </form>
     </section>
 
